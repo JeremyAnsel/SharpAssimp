@@ -2,6 +2,7 @@
 
 # SharpAssimp
 
+[![Build status](https://ci.appveyor.com/api/projects/status/pfc4bqccqo8so3xn/branch/main?svg=true)](https://ci.appveyor.com/project/JeremyAnsel/sharpassimp/branch/main)
 [![NuGet Version](https://img.shields.io/nuget/v/SharpAssimp)](https://www.nuget.org/packages/SharpAssimp)
 ![License](https://img.shields.io/github/license/JeremyAnsel/SharpAssimp)
 
