@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class IOStream </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class IOStream ">
+    
+    <meta name="description" content="Defines a stream to some file input or output source. This object is responsible for reading/writing data that is used by Assimp.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/JeremyAnsel/SharpAssimp" title="Source Code">Source Code</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.html" title="SharpAssimp" class="">SharpAssimp</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AnimationBehaviour.html" title="AnimationBehaviour" class="">AnimationBehaviour</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AnimationInterpolation.html" title="AnimationInterpolation" class="">AnimationInterpolation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AssimpContext.html" title="AssimpContext" class="">AssimpContext</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AssimpException.html" title="AssimpException" class="">AssimpException</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.BlendMode.html" title="BlendMode" class="">BlendMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Bone.html" title="Bone" class="">Bone</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.BoundingBox.html" title="BoundingBox" class="">BoundingBox</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Camera.html" title="Camera" class="">Camera</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.CompileFlags.html" title="CompileFlags" class="">CompileFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ConsoleLogStream.html" title="ConsoleLogStream" class="">ConsoleLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.DefaultLogStream.html" title="DefaultLogStream" class="">DefaultLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.EmbeddedTexture.html" title="EmbeddedTexture" class="">EmbeddedTexture</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExcludeComponent.html" title="ExcludeComponent" class="">ExcludeComponent</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExportDataBlob.html" title="ExportDataBlob" class="">ExportDataBlob</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExportFormatDescription.html" title="ExportFormatDescription" class="">ExportFormatDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Face.html" title="Face" class="">Face</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FileIOMode.html" title="FileIOMode" class="">FileIOMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FileIOSystem.html" title="FileIOSystem" class="">FileIOSystem</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FreeNativeDelegate.html" title="FreeNativeDelegate" class="">FreeNativeDelegate</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IMarshalable-2.html" title="IMarshalable&lt;Managed, Native&gt;" class="">IMarshalable&lt;Managed, Native&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.INativeCustomMarshaler.html" title="INativeCustomMarshaler" class="">INativeCustomMarshaler</a>
+                          </li>
+                          <li class="active">
+                            <a href="SharpAssimp.IOStream.html" title="IOStream" class="active">IOStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IOSystem.html" title="IOSystem" class="">IOSystem</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ImporterDescription.html" title="ImporterDescription" class="">ImporterDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ImporterFeatureFlags.html" title="ImporterFeatureFlags" class="">ImporterFeatureFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Light.html" title="Light" class="">Light</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LightSourceType.html" title="LightSourceType" class="">LightSourceType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LogStream.html" title="LogStream" class="">LogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LoggingCallback.html" title="LoggingCallback" class="">LoggingCallback</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.html" title="Material" class="">Material</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.PBRMaterialProperties.html" title="Material.PBRMaterialProperties" class="">Material.PBRMaterialProperties</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.ShaderMaterialProperties.html" title="Material.ShaderMaterialProperties" class="">Material.ShaderMaterialProperties</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MaterialProperty.html" title="MaterialProperty" class="">MaterialProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Matrix3x3.html" title="Matrix3x3" class="">Matrix3x3</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MemoryHelper.html" title="MemoryHelper" class="">MemoryHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Mesh.html" title="Mesh" class="">Mesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshAnimationAttachment.html" title="MeshAnimationAttachment" class="">MeshAnimationAttachment</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshAnimationChannel.html" title="MeshAnimationChannel" class="">MeshAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshKey.html" title="MeshKey" class="">MeshKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphAnimationChannel.html" title="MeshMorphAnimationChannel" class="">MeshMorphAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphKey.html" title="MeshMorphKey" class="">MeshMorphKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphingMethod.html" title="MeshMorphingMethod" class="">MeshMorphingMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MetaDataType.html" title="MetaDataType" class="">MetaDataType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Metadata.html" title="Metadata" class="">Metadata</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Metadata.Entry.html" title="Metadata.Entry" class="">Metadata.Entry</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NativeCustomMarshalerAttribute.html" title="NativeCustomMarshalerAttribute" class="">NativeCustomMarshalerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Node.html" title="Node" class="">Node</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NodeAnimationChannel.html" title="NodeAnimationChannel" class="">NodeAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NodeCollection.html" title="NodeCollection" class="">NodeCollection</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Origin.html" title="Origin" class="">Origin</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PostProcessPreset.html" title="PostProcessPreset" class="">PostProcessPreset</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PostProcessSteps.html" title="PostProcessSteps" class="">PostProcessSteps</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PrimitiveType.html" title="PrimitiveType" class="">PrimitiveType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PropertyType.html" title="PropertyType" class="">PropertyType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.QuaternionKey.html" title="QuaternionKey" class="">QuaternionKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Ray.html" title="Ray" class="">Ray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ReturnCode.html" title="ReturnCode" class="">ReturnCode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Scene.html" title="Scene" class="">Scene</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.SceneFlags.html" title="SceneFlags" class="">SceneFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ShadingMode.html" title="ShadingMode" class="">ShadingMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Texel.html" title="Texel" class="">Texel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureFlags.html" title="TextureFlags" class="">TextureFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureMapping.html" title="TextureMapping" class="">TextureMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureOperation.html" title="TextureOperation" class="">TextureOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureSlot.html" title="TextureSlot" class="">TextureSlot</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureType.html" title="TextureType" class="">TextureType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureWrapMode.html" title="TextureWrapMode" class="">TextureWrapMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.UVTransform.html" title="UVTransform" class="">UVTransform</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.UVTransformFlags.html" title="UVTransformFlags" class="">UVTransformFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.VectorKey.html" title="VectorKey" class="">VectorKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.VertexWeight.html" title="VertexWeight" class="">VertexWeight</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.Configs.html" title="SharpAssimp.Configs" class="">SharpAssimp.Configs</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ACEvaluateSubdivisionConfig.html" title="ACEvaluateSubdivisionConfig" class="">ACEvaluateSubdivisionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ACSeparateBackfaceCullConfig.html" title="ACSeparateBackfaceCullConfig" class="">ACSeparateBackfaceCullConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ASEReconstructNormalsConfig.html" title="ASEReconstructNormalsConfig" class="">ASEReconstructNormalsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.AnimationAccuracyConfig.html" title="AnimationAccuracyConfig" class="">AnimationAccuracyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.AppScaleConfig.html" title="AppScaleConfig" class="">AppScaleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.BooleanPropertyConfig.html" title="BooleanPropertyConfig" class="">BooleanPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig.html" title="ColladaIgnoreUpDirectionConfig" class="">ColladaIgnoreUpDirectionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ColladaUseColladaNamesConfig.html" title="ColladaUseColladaNamesConfig" class="">ColladaUseColladaNamesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.DeboneAllOrNoneConfig.html" title="DeboneAllOrNoneConfig" class="">DeboneAllOrNoneConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.DeboneThresholdConfig.html" title="DeboneThresholdConfig" class="">DeboneThresholdConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ExportPointCloudsConfig.html" title="ExportPointCloudsConfig" class="">ExportPointCloudsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXConvertToMetersConfig.html" title="FBXConvertToMetersConfig" class="">FBXConvertToMetersConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAllGeometryLayersConfig.html" title="FBXImportAllGeometryLayersConfig" class="">FBXImportAllGeometryLayersConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAllMaterialsConfig.html" title="FBXImportAllMaterialsConfig" class="">FBXImportAllMaterialsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAnimationsConfig.html" title="FBXImportAnimationsConfig" class="">FBXImportAnimationsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportCamerasConfig.html" title="FBXImportCamerasConfig" class="">FBXImportCamerasConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig.html" title="FBXImportEmbeddedTexturesConfig" class="">FBXImportEmbeddedTexturesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig.html" title="FBXImportEmbeddedTexturesLegacyNamingConfig" class="">FBXImportEmbeddedTexturesLegacyNamingConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportLightsConfig.html" title="FBXImportLightsConfig" class="">FBXImportLightsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportMaterialsConfig.html" title="FBXImportMaterialsConfig" class="">FBXImportMaterialsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig.html" title="FBXOptimizeEmptyAnimationCurvesConfig" class="">FBXOptimizeEmptyAnimationCurvesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXPreservePivotsConfig.html" title="FBXPreservePivotsConfig" class="">FBXPreservePivotsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXStrictModeConfig.html" title="FBXStrictModeConfig" class="">FBXStrictModeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FavorSpeedConfig.html" title="FavorSpeedConfig" class="">FavorSpeedConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FloatPropertyConfig.html" title="FloatPropertyConfig" class="">FloatPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.GlobalKeyFrameImportConfig.html" title="GlobalKeyFrameImportConfig" class="">GlobalKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.GlobalScaleConfig.html" title="GlobalScaleConfig" class="">GlobalScaleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCCylindricalTessellationConfig.html" title="IFCCylindricalTessellationConfig" class="">IFCCylindricalTessellationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig.html" title="IFCSkipSpaceRepresentationsConfig" class="">IFCSkipSpaceRepresentationsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCSmoothingAngleConfig.html" title="IFCSmoothingAngleConfig" class="">IFCSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCUseCustomTriangulationConfig.html" title="IFCUseCustomTriangulationConfig" class="">IFCUseCustomTriangulationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IRRAnimationFrameRateConfig.html" title="IRRAnimationFrameRateConfig" class="">IRRAnimationFrameRateConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.html" title="IgnoreTextureCoordinatesConfig" class="">IgnoreTextureCoordinatesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IntegerPropertyConfig.html" title="IntegerPropertyConfig" class="">IntegerPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.KeepSceneHierarchyConfig.html" title="KeepSceneHierarchyConfig" class="">KeepSceneHierarchyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWOImportOneLayerConfig.html" title="LWOImportOneLayerConfig" class="">LWOImportOneLayerConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWSAnimationEndConfig.html" title="LWSAnimationEndConfig" class="">LWSAnimationEndConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWSAnimationStartConfig.html" title="LWSAnimationStartConfig" class="">LWSAnimationStartConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD2KeyFrameImportConfig.html" title="MD2KeyFrameImportConfig" class="">MD2KeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3HandleMultiPartConfig.html" title="MD3HandleMultiPartConfig" class="">MD3HandleMultiPartConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3KeyFrameImportConfig.html" title="MD3KeyFrameImportConfig" class="">MD3KeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3ShaderSourceConfig.html" title="MD3ShaderSourceConfig" class="">MD3ShaderSourceConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3SkinNameConfig.html" title="MD3SkinNameConfig" class="">MD3SkinNameConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig.html" title="MD5NoAnimationAutoLoadConfig" class="">MD5NoAnimationAutoLoadConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MDLColorMapConfig.html" title="MDLColorMapConfig" class="">MDLColorMapConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MDLKeyFrameImportConfig.html" title="MDLKeyFrameImportConfig" class="">MDLKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MaterialExcludeListConfig.html" title="MaterialExcludeListConfig" class="">MaterialExcludeListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MatrixPropertyConfig.html" title="MatrixPropertyConfig" class="">MatrixPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MaxBoneCountConfig.html" title="MaxBoneCountConfig" class="">MaxBoneCountConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeasureTimeConfig.html" title="MeasureTimeConfig" class="">MeasureTimeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeshTriangleLimitConfig.html" title="MeshTriangleLimitConfig" class="">MeshTriangleLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeshVertexLimitConfig.html" title="MeshVertexLimitConfig" class="">MeshVertexLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MultithreadingConfig.html" title="MultithreadingConfig" class="">MultithreadingConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NoSkeletonMeshesConfig.html" title="NoSkeletonMeshesConfig" class="">NoSkeletonMeshesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NodeExcludeListConfig.html" title="NodeExcludeListConfig" class="">NodeExcludeListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NormalSmoothingAngleConfig.html" title="NormalSmoothingAngleConfig" class="">NormalSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NormalizeVertexComponentsConfig.html" title="NormalizeVertexComponentsConfig" class="">NormalizeVertexComponentsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.OgreMaterialFileConfig.html" title="OgreMaterialFileConfig" class="">OgreMaterialFileConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.html" title="OgreTextureTypeFromFilenameConfig" class="">OgreTextureTypeFromFilenameConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.PropertyConfig.html" title="PropertyConfig" class="">PropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveComponentConfig.html" title="RemoveComponentConfig" class="">RemoveComponentConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig.html" title="RemoveDegeneratePrimitivesCheckAreaConfig" class="">RemoveDegeneratePrimitivesCheckAreaConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig.html" title="RemoveDegeneratePrimitivesConfig" class="">RemoveDegeneratePrimitivesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveEmptyBonesConfig.html" title="RemoveEmptyBonesConfig" class="">RemoveEmptyBonesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RootTransformationConfig.html" title="RootTransformationConfig" class="">RootTransformationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SMDKeyFrameImportConfig.html" title="SMDKeyFrameImportConfig" class="">SMDKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SmdLoadAnimationListConfig.html" title="SmdLoadAnimationListConfig" class="">SmdLoadAnimationListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SortByPrimitiveTypeConfig.html" title="SortByPrimitiveTypeConfig" class="">SortByPrimitiveTypeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.StringPropertyConfig.html" title="StringPropertyConfig" class="">StringPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TangentSmoothingAngleConfig.html" title="TangentSmoothingAngleConfig" class="">TangentSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TangentTextureChannelIndexConfig.html" title="TangentTextureChannelIndexConfig" class="">TangentTextureChannelIndexConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TerragenComputeTexCoordsConfig.html" title="TerragenComputeTexCoordsConfig" class="">TerragenComputeTexCoordsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TransformUVConfig.html" title="TransformUVConfig" class="">TransformUVConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.UnrealHandleFlagsConfig.html" title="UnrealHandleFlagsConfig" class="">UnrealHandleFlagsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.UnrealKeyFrameImportConfig.html" title="UnrealKeyFrameImportConfig" class="">UnrealKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.VertexBoneWeightLimitConfig.html" title="VertexBoneWeightLimitConfig" class="">VertexBoneWeightLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.VertexCacheSizeConfig.html" title="VertexCacheSizeConfig" class="">VertexCacheSizeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.XFileUseDoublesConfig.html" title="XFileUseDoublesConfig" class="">XFileUseDoublesConfig</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.Unmanaged.html" title="SharpAssimp.Unmanaged" class="">SharpAssimp.Unmanaged</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiAnimMesh.html" title="AiAnimMesh" class="">AiAnimMesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiAnimation.html" title="AiAnimation" class="">AiAnimation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiBone.html" title="AiBone" class="">AiBone</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiCamera.html" title="AiCamera" class="">AiCamera</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiConfigs.html" title="AiConfigs" class="">AiConfigs</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiDefines.html" title="AiDefines" class="">AiDefines</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiExportDataBlob.html" title="AiExportDataBlob" class="">AiExportDataBlob</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiExportFormatDesc.html" title="AiExportFormatDesc" class="">AiExportFormatDesc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFace.html" title="AiFace" class="">AiFace</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFile.html" title="AiFile" class="">AiFile</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileCloseProc.html" title="AiFileCloseProc" class="">AiFileCloseProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileFlushProc.html" title="AiFileFlushProc" class="">AiFileFlushProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileIO.html" title="AiFileIO" class="">AiFileIO</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileOpenProc.html" title="AiFileOpenProc" class="">AiFileOpenProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileReadProc.html" title="AiFileReadProc" class="">AiFileReadProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileSeek.html" title="AiFileSeek" class="">AiFileSeek</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileTellProc.html" title="AiFileTellProc" class="">AiFileTellProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileWriteProc.html" title="AiFileWriteProc" class="">AiFileWriteProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiImporterDesc.html" title="AiImporterDesc" class="">AiImporterDesc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLight.html" title="AiLight" class="">AiLight</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLogStream.html" title="AiLogStream" class="">AiLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLogStreamCallback.html" title="AiLogStreamCallback" class="">AiLogStreamCallback</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMatKeys.html" title="AiMatKeys" class="">AiMatKeys</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMaterial.html" title="AiMaterial" class="">AiMaterial</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMaterialProperty.html" title="AiMaterialProperty" class="">AiMaterialProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMemoryInfo.html" title="AiMemoryInfo" class="">AiMemoryInfo</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMesh.html" title="AiMesh" class="">AiMesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshAnim.html" title="AiMeshAnim" class="">AiMeshAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshColorArray.html" title="AiMeshColorArray" class="">AiMeshColorArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshMorphAnim.html" title="AiMeshMorphAnim" class="">AiMeshMorphAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshMorphKey.html" title="AiMeshMorphKey" class="">AiMeshMorphKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray.html" title="AiMeshTextureCoordinateArray" class="">AiMeshTextureCoordinateArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshUVComponentArray.html" title="AiMeshUVComponentArray" class="">AiMeshUVComponentArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMetadata.html" title="AiMetadata" class="">AiMetadata</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMetadataEntry.html" title="AiMetadataEntry" class="">AiMetadataEntry</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiNode.html" title="AiNode" class="">AiNode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiNodeAnim.html" title="AiNodeAnim" class="">AiNodeAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiScene.html" title="AiScene" class="">AiScene</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiString.html" title="AiString" class="">AiString</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiTexture.html" title="AiTexture" class="">AiTexture</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AssimpLibrary.html" title="AssimpLibrary" class="">AssimpLibrary</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.Platform.html" title="Platform" class="">Platform</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute.html" title="UnmanagedFunctionNameAttribute" class="">UnmanagedFunctionNameAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedLibrary.html" title="UnmanagedLibrary" class="">UnmanagedLibrary</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedLibraryResolver.html" title="UnmanagedLibraryResolver" class="">UnmanagedLibraryResolver</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SharpAssimp.IOStream">
+
+
+
+  <h1 id="SharpAssimp_IOStream" data-uid="SharpAssimp.IOStream" class="text-break">Class IOStream</h1>
+  <div class="markdown level0 summary"><p>Defines a stream to some file input or output source. This object is responsible for reading/writing data
+that is used by Assimp.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">IOStream</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SharpAssimp.html">SharpAssimp</a></h6>
+  <h6><strong>Assembly</strong>: SharpAssimp.dll</h6>
+  <h5 id="SharpAssimp_IOStream_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class IOStream : IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream__ctor_System_String_SharpAssimp_FileIOMode_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.%23ctor(System.String%2CSharpAssimp.FileIOMode)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L78">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream__ctor_" data-uid="SharpAssimp.IOStream.#ctor*"></a>
+  <h4 id="SharpAssimp_IOStream__ctor_System_String_SharpAssimp_FileIOMode_" data-uid="SharpAssimp.IOStream.#ctor(System.String,SharpAssimp.FileIOMode)">IOStream(string, FileIOMode)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new IOStream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IOStream(string pathToFile, FileIOMode fileMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">pathToFile</span></td>
+        <td><p>Path to file given by Assimp</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.FileIOMode.html">FileIOMode</a></td>
+        <td><span class="parametername">fileMode</span></td>
+        <td><p>Desired file access mode</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream__ctor_System_String_SharpAssimp_FileIOMode_System_Boolean_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.%23ctor(System.String%2CSharpAssimp.FileIOMode%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L87">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream__ctor_" data-uid="SharpAssimp.IOStream.#ctor*"></a>
+  <h4 id="SharpAssimp_IOStream__ctor_System_String_SharpAssimp_FileIOMode_System_Boolean_" data-uid="SharpAssimp.IOStream.#ctor(System.String,SharpAssimp.FileIOMode,System.Boolean)">IOStream(string, FileIOMode, bool)</h4>
+  <div class="markdown level1 summary"><p>Constructs a new IOStream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IOStream(string pathToFile, FileIOMode fileMode, bool initialize = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">pathToFile</span></td>
+        <td><p>Path to file given by Assimp</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.FileIOMode.html">FileIOMode</a></td>
+        <td><span class="parametername">fileMode</span></td>
+        <td><p>Desired file access mode</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">initialize</span></td>
+        <td><p>True if initialize should be immediately called with the default callbacks. Set this to false
+if your subclass requires a different way to setup the function pointers.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_FileMode.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.FileMode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L60">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_FileMode_" data-uid="SharpAssimp.IOStream.FileMode*"></a>
+  <h4 id="SharpAssimp_IOStream_FileMode" data-uid="SharpAssimp.IOStream.FileMode">FileMode</h4>
+  <div class="markdown level1 summary"><p>Gets the original desired file access mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FileIOMode FileMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.FileIOMode.html">FileIOMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_IsDisposed.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.IsDisposed%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L50">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_IsDisposed_" data-uid="SharpAssimp.IOStream.IsDisposed*"></a>
+  <h4 id="SharpAssimp_IOStream_IsDisposed" data-uid="SharpAssimp.IOStream.IsDisposed">IsDisposed</h4>
+  <div class="markdown level1 summary"><p>Gets whether or not this IOStream has been disposed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_IsValid.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.IsValid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L66">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_IsValid_" data-uid="SharpAssimp.IOStream.IsValid*"></a>
+  <h4 id="SharpAssimp_IOStream_IsValid" data-uid="SharpAssimp.IOStream.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"><p>Gets whether the stream is in fact valid - that is, the input/output has been
+properly located and can be read/written.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsValid { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_PathToFile.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.PathToFile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L55">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_PathToFile_" data-uid="SharpAssimp.IOStream.PathToFile*"></a>
+  <h4 id="SharpAssimp_IOStream_PathToFile" data-uid="SharpAssimp.IOStream.PathToFile">PathToFile</h4>
+  <div class="markdown level1 summary"><p>Gets the original path to file given by Assimp.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PathToFile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Close.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Close%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L218">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Close_" data-uid="SharpAssimp.IOStream.Close*"></a>
+  <h4 id="SharpAssimp_IOStream_Close" data-uid="SharpAssimp.IOStream.Close">Close()</h4>
+  <div class="markdown level1 summary"><p>Closes the stream - flushing any data not yet read/written and disposes of resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Close()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Dispose.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L140">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Dispose_" data-uid="SharpAssimp.IOStream.Dispose*"></a>
+  <h4 id="SharpAssimp_IOStream_Dispose" data-uid="SharpAssimp.IOStream.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Disposes of resources held by the IOStream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Dispose(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L150">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Dispose_" data-uid="SharpAssimp.IOStream.Dispose*"></a>
+  <h4 id="SharpAssimp_IOStream_Dispose_System_Boolean_" data-uid="SharpAssimp.IOStream.Dispose(System.Boolean)">Dispose(bool)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged and - optionally - managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>True to release both managed and unmanaged resources; False to release only unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Finalize.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Finalize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L132">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Finalize_" data-uid="SharpAssimp.IOStream.Finalize*"></a>
+  <h4 id="SharpAssimp_IOStream_Finalize" data-uid="SharpAssimp.IOStream.Finalize">~IOStream()</h4>
+  <div class="markdown level1 summary"><p>Finalizes an instance of the <a class="xref" href="SharpAssimp.IOStream.html">IOStream</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~IOStream()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Flush.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Flush%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L213">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Flush_" data-uid="SharpAssimp.IOStream.Flush*"></a>
+  <h4 id="SharpAssimp_IOStream_Flush" data-uid="SharpAssimp.IOStream.Flush">Flush()</h4>
+  <div class="markdown level1 summary"><p>Flushes all data currently in the stream buffers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Flush()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_GetFileSize.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.GetFileSize%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L208">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_GetFileSize_" data-uid="SharpAssimp.IOStream.GetFileSize*"></a>
+  <h4 id="SharpAssimp_IOStream_GetFileSize" data-uid="SharpAssimp.IOStream.GetFileSize">GetFileSize()</h4>
+  <div class="markdown level1 summary"><p>Gets the total file size (in bytes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract long GetFileSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>File size in bytes</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_GetPosition.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.GetPosition%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L202">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_GetPosition_" data-uid="SharpAssimp.IOStream.GetPosition*"></a>
+  <h4 id="SharpAssimp_IOStream_GetPosition" data-uid="SharpAssimp.IOStream.GetPosition">GetPosition()</h4>
+  <div class="markdown level1 summary"><p>Gets the current file position pointer (in bytes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract long GetPosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>Current file position pointer (in bytes)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Initialize_SharpAssimp_Unmanaged_AiFileWriteProc_SharpAssimp_Unmanaged_AiFileReadProc_SharpAssimp_Unmanaged_AiFileTellProc_SharpAssimp_Unmanaged_AiFileTellProc_SharpAssimp_Unmanaged_AiFileSeek_SharpAssimp_Unmanaged_AiFileFlushProc_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Initialize(SharpAssimp.Unmanaged.AiFileWriteProc%2CSharpAssimp.Unmanaged.AiFileReadProc%2CSharpAssimp.Unmanaged.AiFileTellProc%2CSharpAssimp.Unmanaged.AiFileTellProc%2CSharpAssimp.Unmanaged.AiFileSeek%2CSharpAssimp.Unmanaged.AiFileFlushProc%2CSystem.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L107">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Initialize_" data-uid="SharpAssimp.IOStream.Initialize*"></a>
+  <h4 id="SharpAssimp_IOStream_Initialize_SharpAssimp_Unmanaged_AiFileWriteProc_SharpAssimp_Unmanaged_AiFileReadProc_SharpAssimp_Unmanaged_AiFileTellProc_SharpAssimp_Unmanaged_AiFileTellProc_SharpAssimp_Unmanaged_AiFileSeek_SharpAssimp_Unmanaged_AiFileFlushProc_System_IntPtr_" data-uid="SharpAssimp.IOStream.Initialize(SharpAssimp.Unmanaged.AiFileWriteProc,SharpAssimp.Unmanaged.AiFileReadProc,SharpAssimp.Unmanaged.AiFileTellProc,SharpAssimp.Unmanaged.AiFileTellProc,SharpAssimp.Unmanaged.AiFileSeek,SharpAssimp.Unmanaged.AiFileFlushProc,System.IntPtr)">Initialize(AiFileWriteProc, AiFileReadProc, AiFileTellProc, AiFileTellProc, AiFileSeek, AiFileFlushProc, nint)</h4>
+  <div class="markdown level1 summary"><p>Initializes the system by setting up native pointers for Assimp to the specified functions. A reference to each
+supplied callback is held on to avoid it being GC'ed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Initialize(AiFileWriteProc aiFileWriteProc, AiFileReadProc aiFileReadProc, AiFileTellProc aiFileTellProc, AiFileTellProc aiFileSizeProc, AiFileSeek aiFileSeek, AiFileFlushProc aiFileFlushProc, nint userData = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Unmanaged.AiFileWriteProc.html">AiFileWriteProc</a></td>
+        <td><span class="parametername">aiFileWriteProc</span></td>
+        <td><p>Handles write requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Unmanaged.AiFileReadProc.html">AiFileReadProc</a></td>
+        <td><span class="parametername">aiFileReadProc</span></td>
+        <td><p>Handles read requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Unmanaged.AiFileTellProc.html">AiFileTellProc</a></td>
+        <td><span class="parametername">aiFileTellProc</span></td>
+        <td><p>Handles tell requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Unmanaged.AiFileTellProc.html">AiFileTellProc</a></td>
+        <td><span class="parametername">aiFileSizeProc</span></td>
+        <td><p>Handles size requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Unmanaged.AiFileSeek.html">AiFileSeek</a></td>
+        <td><span class="parametername">aiFileSeek</span></td>
+        <td><p>Handles seek requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Unmanaged.AiFileFlushProc.html">AiFileFlushProc</a></td>
+        <td><span class="parametername">aiFileFlushProc</span></td>
+        <td><p>Handles flush requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td><p>Additional user data, if any.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_OnAiFileFlushProc_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.OnAiFileFlushProc(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L358">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_OnAiFileFlushProc_" data-uid="SharpAssimp.IOStream.OnAiFileFlushProc*"></a>
+  <h4 id="SharpAssimp_IOStream_OnAiFileFlushProc_System_IntPtr_" data-uid="SharpAssimp.IOStream.OnAiFileFlushProc(System.IntPtr)">OnAiFileFlushProc(nint)</h4>
+  <div class="markdown level1 summary"><p>Callback for Assimp that handles flushes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnAiFileFlushProc(nint file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_OnAiFileReadProc_System_IntPtr_System_IntPtr_System_UIntPtr_System_UIntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.OnAiFileReadProc(System.IntPtr%2CSystem.IntPtr%2CSystem.UIntPtr%2CSystem.UIntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L266">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_OnAiFileReadProc_" data-uid="SharpAssimp.IOStream.OnAiFileReadProc*"></a>
+  <h4 id="SharpAssimp_IOStream_OnAiFileReadProc_System_IntPtr_System_IntPtr_System_UIntPtr_System_UIntPtr_" data-uid="SharpAssimp.IOStream.OnAiFileReadProc(System.IntPtr,System.IntPtr,System.UIntPtr,System.UIntPtr)">OnAiFileReadProc(nint, nint, nuint, nuint)</h4>
+  <div class="markdown level1 summary"><p>Callback for Assimp that handles reads.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected nuint OnAiFileReadProc(nint file, nint dataRead, nuint sizeOfElemInBytes, nuint numElements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">dataRead</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">sizeOfElemInBytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">numElements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_OnAiFileSeekProc_System_IntPtr_System_UIntPtr_SharpAssimp_Origin_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.OnAiFileSeekProc(System.IntPtr%2CSystem.UIntPtr%2CSharpAssimp.Origin)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L340">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_OnAiFileSeekProc_" data-uid="SharpAssimp.IOStream.OnAiFileSeekProc*"></a>
+  <h4 id="SharpAssimp_IOStream_OnAiFileSeekProc_System_IntPtr_System_UIntPtr_SharpAssimp_Origin_" data-uid="SharpAssimp.IOStream.OnAiFileSeekProc(System.IntPtr,System.UIntPtr,SharpAssimp.Origin)">OnAiFileSeekProc(nint, nuint, Origin)</h4>
+  <div class="markdown level1 summary"><p>Callback for Assimp that handles seeks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ReturnCode OnAiFileSeekProc(nint file, nuint offset, Origin seekOrigin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Origin.html">Origin</a></td>
+        <td><span class="parametername">seekOrigin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.ReturnCode.html">ReturnCode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_OnAiFileSizeProc_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.OnAiFileSizeProc(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L317">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_OnAiFileSizeProc_" data-uid="SharpAssimp.IOStream.OnAiFileSizeProc*"></a>
+  <h4 id="SharpAssimp_IOStream_OnAiFileSizeProc_System_IntPtr_" data-uid="SharpAssimp.IOStream.OnAiFileSizeProc(System.IntPtr)">OnAiFileSizeProc(nint)</h4>
+  <div class="markdown level1 summary"><p>Callback for Assimp that handles size requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected nuint OnAiFileSizeProc(nint file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_OnAiFileTellProc_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.OnAiFileTellProc(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L296">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_OnAiFileTellProc_" data-uid="SharpAssimp.IOStream.OnAiFileTellProc*"></a>
+  <h4 id="SharpAssimp_IOStream_OnAiFileTellProc_System_IntPtr_" data-uid="SharpAssimp.IOStream.OnAiFileTellProc(System.IntPtr)">OnAiFileTellProc(nint)</h4>
+  <div class="markdown level1 summary"><p>Callback for Assimp that handles tell requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected nuint OnAiFileTellProc(nint file)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_OnAiFileWriteProc_System_IntPtr_System_IntPtr_System_UIntPtr_System_UIntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.OnAiFileWriteProc(System.IntPtr%2CSystem.IntPtr%2CSystem.UIntPtr%2CSystem.UIntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L232">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_OnAiFileWriteProc_" data-uid="SharpAssimp.IOStream.OnAiFileWriteProc*"></a>
+  <h4 id="SharpAssimp_IOStream_OnAiFileWriteProc_System_IntPtr_System_IntPtr_System_UIntPtr_System_UIntPtr_" data-uid="SharpAssimp.IOStream.OnAiFileWriteProc(System.IntPtr,System.IntPtr,System.UIntPtr,System.UIntPtr)">OnAiFileWriteProc(nint, nint, nuint, nuint)</h4>
+  <div class="markdown level1 summary"><p>Callback for Assimp that handles writes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected nuint OnAiFileWriteProc(nint file, nint dataToWrite, nuint sizeOfElemInBytes, nuint numElements)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">file</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">dataToWrite</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">sizeOfElemInBytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td><span class="parametername">numElements</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Read_System_Byte___System_Int64_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Read(System.Byte%5B%5D%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L188">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Read_" data-uid="SharpAssimp.IOStream.Read*"></a>
+  <h4 id="SharpAssimp_IOStream_Read_System_Byte___System_Int64_" data-uid="SharpAssimp.IOStream.Read(System.Byte[],System.Int64)">Read(byte[], long)</h4>
+  <div class="markdown level1 summary"><p>Reads data from the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract long Read(byte[] dataRead, long count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">dataRead</span></td>
+        <td><p>Byte buffer to store the read data in</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of bytes to read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>Number of bytes actually read. Should be equal to the specified count, unless if EoF was hit or an error occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Seek_System_Int64_SharpAssimp_Origin_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Seek(System.Int64%2CSharpAssimp.Origin)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L196">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Seek_" data-uid="SharpAssimp.IOStream.Seek*"></a>
+  <h4 id="SharpAssimp_IOStream_Seek_System_Int64_SharpAssimp_Origin_" data-uid="SharpAssimp.IOStream.Seek(System.Int64,SharpAssimp.Origin)">Seek(long, Origin)</h4>
+  <div class="markdown level1 summary"><p>Sets the current file position pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract ReturnCode Seek(long offset, Origin seekOrigin)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>Offset in bytes from the origin</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.Origin.html">Origin</a></td>
+        <td><span class="parametername">seekOrigin</span></td>
+        <td><p>Origin reference</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.ReturnCode.html">ReturnCode</a></td>
+        <td><p>ReturnCode indicating success or failure.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream_Write_System_Byte___System_Int64_.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream.Write(System.Byte%5B%5D%2CSystem.Int64)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L180">View Source</a>
+  </span>
+  <a id="SharpAssimp_IOStream_Write_" data-uid="SharpAssimp.IOStream.Write*"></a>
+  <h4 id="SharpAssimp_IOStream_Write_System_Byte___System_Int64_" data-uid="SharpAssimp.IOStream.Write(System.Byte[],System.Int64)">Write(byte[], long)</h4>
+  <div class="markdown level1 summary"><p>Writes data to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract long Write(byte[] dataToWrite, long count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">dataToWrite</span></td>
+        <td><p>Data to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of bytes to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><p>Number of bytes actually written. Should be equal to the specified count, unless if EoF was hit or an error occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_IOStream.md&amp;value=---%0Auid%3A%20SharpAssimp.IOStream%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/IOStream.cs/#L32" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright Alan McGovern, Ben Motmans, Lucas Ontivero, J&eacute;r&eacute;my Ansel (c) 2006-2024
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

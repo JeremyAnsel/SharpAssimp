@@ -1,0 +1,2831 @@
+{
+  "source_base_path": "C:/projects/sharpassimp/SharpAssimp/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Animation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Animation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Animation",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Animation.yml\" sourcestartlinenumber=\"1\">An animation consists of keyframe data for a number of nodes. For\neach node affected by the animation, a separate series of data is given.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.AnimationBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.AnimationBehaviour.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.AnimationBehaviour",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.AnimationBehaviour.yml\" sourcestartlinenumber=\"1\">Defines an animation channel behaves outside the defined\ntime range. This corresponds to the prestate and poststates\nof the animation node.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.AnimationInterpolation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.AnimationInterpolation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.AnimationInterpolation",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.AnimationInterpolation.yml\" sourcestartlinenumber=\"1\">Defines the type of interpolation to use.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.AssimpContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.AssimpContext.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.AssimpContext",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.AssimpContext.yml\" sourcestartlinenumber=\"1\">Represents an Assimp Import/Export context that load or save models using the unmanaged library. Additionally, conversion\nfunctionality is offered to bypass loading model data into managed memory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.AssimpException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.AssimpException.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.AssimpException",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.AssimpException.yml\" sourcestartlinenumber=\"1\">AssimpNet general exception.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.BlendMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.BlendMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.BlendMode",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.BlendMode.yml\" sourcestartlinenumber=\"1\">Defines alpha blending flags, how the final\ncolor value of a pixel is computed, based on the following equation:</p>\n<p>\nsourceColor * sourceBlend + destColor * destBlend\n</p>\n<p>\nWhere the destColor is the previous color in the frame buffer\nand sourceColor is the material color before the\ntransparency calculation. This corresponds to the AI_MATKEY_BLEND_FUNC property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Bone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Bone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Bone",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Bone.yml\" sourcestartlinenumber=\"1\">Represents a single bone of a mesh. A bone has a name which allows it to be found in the frame\nhierarchy and by which it can be addressed by animations. In addition it has a number of\ninfluences on vertices and a matrix relating the mesh position to the position of the bone at the time of binding.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.BoundingBox.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.BoundingBox.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.BoundingBox",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.BoundingBox.yml\" sourcestartlinenumber=\"1\">Represents an axis-aligned bounding box</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Camera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Camera.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Camera",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Camera.yml\" sourcestartlinenumber=\"1\">Describes a right-handed camera in the scene. An important aspect is that\nthe camera itself is also part of the scenegraph, meaning any values such\nas the direction vector are not <em sourcefile=\"api/SharpAssimp.Camera.yml\" sourcestartlinenumber=\"3\">absolute</em>, they can be relative to the coordinate\nsystem defined by the node which corresponds to the camera. This allows for camera\nanimations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.CompileFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.CompileFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.CompileFlags",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.CompileFlags.yml\" sourcestartlinenumber=\"1\">Enumerates how the native Assimp DLL was compiled</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.ACEvaluateSubdivisionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.ACEvaluateSubdivisionConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.ACEvaluateSubdivisionConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.ACEvaluateSubdivisionConfig.yml\" sourcestartlinenumber=\"1\">Configures whether the AC loader evaluates subdivision surfaces (indicated by the presence\nof the 'subdiv' attribute in the file). By default, Assimp performs\nthe subdivision using the standard Catmull-Clark algorithm. The default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.ACSeparateBackfaceCullConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.ACSeparateBackfaceCullConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.ACSeparateBackfaceCullConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.ACSeparateBackfaceCullConfig.yml\" sourcestartlinenumber=\"1\">Configures the AC loader to collect all surfaces which have the &quot;Backface cull&quot; flag set in separate\nmeshes. The default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.ASEReconstructNormalsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.ASEReconstructNormalsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.ASEReconstructNormalsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.ASEReconstructNormalsConfig.yml\" sourcestartlinenumber=\"1\">Configures the ASE loader to always reconstruct normal vectors basing on the smoothing groups\nloaded from the file. Some ASE files carry invalid normals, others don't. The default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.AnimationAccuracyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.AnimationAccuracyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.AnimationAccuracyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.AnimationAccuracyConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.FindInvalidData\" data-throw-if-not-resolved=\"false\"></xref> step that\nspecifies the floating point accuracy for animation values, specifically\nthe episilon during comparisons. The default value is 0.0f.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.AppScaleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.AppScaleConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.AppScaleConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.AppScaleConfig.yml\" sourcestartlinenumber=\"1\">Applies an application-specific scaling to the <xref href=\"SharpAssimp.Configs.GlobalScaleConfig\" data-throw-if-not-resolved=\"false\"></xref> to allow for backwards compatibility. Default is 1.0.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.BooleanPropertyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.BooleanPropertyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.BooleanPropertyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.BooleanPropertyConfig.yml\" sourcestartlinenumber=\"1\">Describes a boolean configuration property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the collada loader will ignore the up direction. Default is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.ColladaUseColladaNamesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.ColladaUseColladaNamesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.ColladaUseColladaNamesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.ColladaUseColladaNamesConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the Collada loader should use Collada names as node names.\nIf this property is set to true, the Collada names will be used as the node name. The behavior is to use the id tag (resp. sid tag, if no id tag is present) instead.\nDefault is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.DeboneAllOrNoneConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.DeboneAllOrNoneConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.DeboneAllOrNoneConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.DeboneAllOrNoneConfig.yml\" sourcestartlinenumber=\"1\">Configuration that requires all bones to qualify for deboning before any are removed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.DeboneThresholdConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.DeboneThresholdConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.DeboneThresholdConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.DeboneThresholdConfig.yml\" sourcestartlinenumber=\"1\">Configures the <xref href=\"SharpAssimp.PostProcessSteps.Debone\" data-throw-if-not-resolved=\"false\"></xref> threshold that is used to determine what bones are removed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.ExportPointCloudsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.ExportPointCloudsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.ExportPointCloudsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.ExportPointCloudsConfig.yml\" sourcestartlinenumber=\"1\">Specifies if the export process should disable a validation step that would remove data that does not contain faces. This will\nenable point cloud data to be exported, since the 3D data is a collection of vertices without face data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXConvertToMetersConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXConvertToMetersConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXConvertToMetersConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXConvertToMetersConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the importer shall convert the unit from centimeter (cm) to meter (m). Default value is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportAllGeometryLayersConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportAllGeometryLayersConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportAllGeometryLayersConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportAllGeometryLayersConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will merge all geometry layers present in the source file or import only the first. Default is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportAllMaterialsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportAllMaterialsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportAllMaterialsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportAllMaterialsConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will import all materials present in the source file or take only the referenced materials,\nif the importer is configured to import materials at all. Otherwise this will have no effect. Default is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportAnimationsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportAnimationsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportAnimationsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportAnimationsConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will import animations. Default is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportCamerasConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportCamerasConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportCamerasConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportCamerasConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will import cameras. Default is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will import embedded textures. Default is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig.yml\" sourcestartlinenumber=\"1\">Specifies if the FBX importer should search for embedded loaded textures, where no embedded texture data is provided. Default is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportLightsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportLightsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportLightsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportLightsConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will import lights. Default is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXImportMaterialsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXImportMaterialsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXImportMaterialsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXImportMaterialsConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will import materials. Default is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the importer will drop empty animation curves or animation curves which match the bind pose\ntransformation over their entire defined range. Default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXPreservePivotsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXPreservePivotsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXPreservePivotsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXPreservePivotsConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will preserve pivot points for transformations (as extra nodes). If set to false, pivots\nand offsets will be evaluated whenever possible. Default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FBXStrictModeConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FBXStrictModeConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FBXStrictModeConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FBXStrictModeConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the FBX importer will act in strict mode in which only the FBX 2013\nformat is supported and any other sub formats are rejected. FBX 2013 is the primary target for the importer, so this\nformat is best supported and well-tested. Default is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FavorSpeedConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FavorSpeedConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FavorSpeedConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FavorSpeedConfig.yml\" sourcestartlinenumber=\"1\">Configuration that is a hint to Assimp to favor speed against import quality. Enabling this\noption may result in faster loading, or it may not. It is just a hint to loaders\nand post-process steps to use faster code paths if possible. The default value is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.FloatPropertyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.FloatPropertyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.FloatPropertyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.FloatPropertyConfig.yml\" sourcestartlinenumber=\"1\">Describes a float configuration property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.GlobalKeyFrameImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.GlobalKeyFrameImportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.GlobalKeyFrameImportConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.GlobalKeyFrameImportConfig.yml\" sourcestartlinenumber=\"1\">Sets the vertex animation keyframe to be imported. Assimp does not support vertex keyframes (only\nbone animation is supported). the library reads only one keyframe with vertex animations. By default this is the\nfirst frame. This config sets the &quot;global&quot; keyframe that will be imported. There are other configs\nfor specific importers that will override the global setting.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.GlobalScaleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.GlobalScaleConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.GlobalScaleConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.GlobalScaleConfig.yml\" sourcestartlinenumber=\"1\">Configures the <xref href=\"SharpAssimp.PostProcessSteps.GlobalScale\" data-throw-if-not-resolved=\"false\"></xref> step to scale the entire scene by a certain amount. Some importers provide a mechanism to define a scaling unit for the model,\nwhich this processing step can utilize. Default is 1.0.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IFCCylindricalTessellationConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IFCCylindricalTessellationConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IFCCylindricalTessellationConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IFCCylindricalTessellationConfig.yml\" sourcestartlinenumber=\"1\">Specifies the tessellation for IFC cylindrical shapes. E.g. the number of segments used to approximate a circle. Accepted range of values is between [3, 180].</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the IFC loader skips over IfcSpace elements. IfcSpace elements (and their geometric representations) are used to represent free space in a building story.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IFCSmoothingAngleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IFCSmoothingAngleConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IFCSmoothingAngleConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IFCSmoothingAngleConfig.yml\" sourcestartlinenumber=\"1\">Specifies the tessellation conic angle for IFC smoothing curves. Accepted range of values is between [5, 120]</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IFCUseCustomTriangulationConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IFCUseCustomTriangulationConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IFCUseCustomTriangulationConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IFCUseCustomTriangulationConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the IFC loader will use its own, custom triangulation algorithm to triangulate wall and floor meshes. If this is set to false,\nwalls will be either triangulated by the post process triangulation or will be passed through as huge polygons with faked holes (e.g. holes that are connected\nwith the outer boundary using a dummy edge). It is highly recommended to leave this property set to true as the default post process has some known\nissues with these kind of polygons.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IRRAnimationFrameRateConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IRRAnimationFrameRateConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IRRAnimationFrameRateConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IRRAnimationFrameRateConfig.yml\" sourcestartlinenumber=\"1\">Defines the output frame rate of the IRR loader.</p>\n<p>IRR animations are difficult to convert for Assimp and there will always be\na loss of quality. This setting defines how many keys per second are returned by the converter.</p>\nThe default value is 100 frames per second.\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IgnoreTextureCoordinatesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.FindInvalidData\" data-throw-if-not-resolved=\"false\"></xref> step. Set to true to\nignore texture coordinates. This may be useful if you have to assign different kinds of textures,\nlike seasonally variable ones - one for summer and one for winter. Default is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.IntegerPropertyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.IntegerPropertyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.IntegerPropertyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IntegerPropertyConfig.yml\" sourcestartlinenumber=\"1\">Describes an integer configuration property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.KeepSceneHierarchyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.KeepSceneHierarchyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.KeepSceneHierarchyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.KeepSceneHierarchyConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.PreTransformVertices\" data-throw-if-not-resolved=\"false\"></xref> step\nto keep the scene hierarchy. Meshes are moved to worldspace, but no optimization is performed\nwhere meshes with the same materials are not joined. This option can be useful\nif you have a scene hierarchy that contains important additional information\nwhich you intend to parse. The default value is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.LWOImportOneLayerConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.LWOImportOneLayerConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.LWOImportOneLayerConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.LWOImportOneLayerConfig.yml\" sourcestartlinenumber=\"1\">Configures the LWO loader to load just one layer from the model.</p>\n<p>LWO files consist of layers and in some cases it could be useful to load only one of them.\nThis property can be either a string - which specifies the name of the layer - or an integer - the index\nof the layer. If the property is not set then the whole LWO model is loaded. Loading fails\nif the requested layer is not vailable. The layer index is zero-based and the layer name may not be empty</p>\nThe default value is false (all layers are loaded).\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.LWSAnimationEndConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.LWSAnimationEndConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.LWSAnimationEndConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.LWSAnimationEndConfig.yml\" sourcestartlinenumber=\"1\">Defines the ending of the time range for which the LWS loader evaluates animations and computes\nAiNodeAnim's. The default value is the one taken from the file</p>\n<p>Assimp provides full conversion of Lightwave's envelope system, including pre and post\nconditions. The loader computes linearly subsampled animation channels with the frame rate\ngiven in the LWS file. This property defines the end time.</p>\n<p>Animation channels are only generated if a node has at least one envelope with more than one key\nassigned. This property is given in frames where '0' is the first. By default,\nif this property is not set, the importer takes the animation end from the input LWS\nfile.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.LWSAnimationStartConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.LWSAnimationStartConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.LWSAnimationStartConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.LWSAnimationStartConfig.yml\" sourcestartlinenumber=\"1\">Defines the beginning of the time range for which the LWS loader evaluates animations and computes\nAiNodeAnim's. The default value is the one taken from the file.</p>\n<p>Assimp provides full conversion of Lightwave's envelope system, including pre and post\nconditions. The loader computes linearly subsampled animation channels with the frame rate\ngiven in the LWS file. This property defines the start time.</p>\n<p>Animation channels are only generated if a node has at least one envelope with more than one key\nassigned. This property is given in frames where '0' is the first. By default,\nif this property is not set, the importer takes the animation start from the input LWS\nfile ('FirstFrame' line)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MD2KeyFrameImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MD2KeyFrameImportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MD2KeyFrameImportConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MD2KeyFrameImportConfig.yml\" sourcestartlinenumber=\"1\">Sets the vertex animation keyframe to be imported. Assimp does not support vertex keyframes (only\nbone animation is supported). the library reads only one keyframe with vertex animations. By default this is the\nfirst frame. This config sets the global override for the MD2 format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MD3HandleMultiPartConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MD3HandleMultiPartConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MD3HandleMultiPartConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MD3HandleMultiPartConfig.yml\" sourcestartlinenumber=\"1\">Configures the M3D loader to detect and process multi-part Quake player models. These models\nusually consit of three files, lower.md3, upper.md3 and head.md3. If this propery is\nset to true, Assimp will try to load and combine all three files if one of them is loaded. The\ndefault value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MD3KeyFrameImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MD3KeyFrameImportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MD3KeyFrameImportConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MD3KeyFrameImportConfig.yml\" sourcestartlinenumber=\"1\">Sets the vertex animation keyframe to be imported. Assimp does not support vertex keyframes (only\nbone animation is supported). the library reads only one keyframe with vertex animations. By default this is the\nfirst frame. This config sets the global override for the MD3 format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MD3ShaderSourceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MD3ShaderSourceConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MD3ShaderSourceConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MD3ShaderSourceConfig.yml\" sourcestartlinenumber=\"1\">Specifies the Quake 3 shader file to be used for a particular MD3 file. This can be a full path or\nrelative to where all MD3 shaders reside. the default string value is an empty string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MD3SkinNameConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MD3SkinNameConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MD3SkinNameConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MD3SkinNameConfig.yml\" sourcestartlinenumber=\"1\">Tells the MD3 loader which skin files to load. When loading MD3 files, Assimp checks\nwhether a file named &quot;md3_file_name&quot;_&quot;skin_name&quot;.skin exists. These files are used by\nQuake III to be able to assign different skins (e.g. red and blue team) to models. 'default', 'red', 'blue'\nare typical skin names. The default string value is &quot;default&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig.yml\" sourcestartlinenumber=\"1\">Configures the MD5 loader to not load the MD5ANIM file for a MD5MESH file automatically.\nThe default value is false.</p>\n<p>The default strategy is to look for a file with the same name but with the MD5ANIm extension\nin the same directory. If it is found it is loaded and combined with the MD5MESH file. This configuration\noption can be used to disable this behavior.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MDLColorMapConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MDLColorMapConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MDLColorMapConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MDLColorMapConfig.yml\" sourcestartlinenumber=\"1\">Configuration to set the colormap (palette) to be used to decode embedded textures in MDL (Quake or 3DG5)\nfiles. This must be a valid path to a file. The file is 768 (256 * 3) bytes alrge and contains\nRGB triplets for each of the 256 palette entries. If the file is not found, a\ndefault palette (from Quake 1) is used. The default value is &quot;colormap.lmp&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MDLKeyFrameImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MDLKeyFrameImportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MDLKeyFrameImportConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MDLKeyFrameImportConfig.yml\" sourcestartlinenumber=\"1\">Sets the vertex animation keyframe to be imported. Assimp does not support vertex keyframes (only\nbone animation is supported). the library reads only one keyframe with vertex animations. By default this is the\nfirst frame. This config sets the global override for the MDL format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MaterialExcludeListConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MaterialExcludeListConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MaterialExcludeListConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MaterialExcludeListConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the the <xref href=\"SharpAssimp.PostProcessSteps.RemoveRedundantMaterials\" data-throw-if-not-resolved=\"false\"></xref> step\nto determine what materials to keep. If a material matches one of these names it will not\nbe modified or removed by the post processing step. Default is an empty string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MatrixPropertyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MatrixPropertyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MatrixPropertyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MatrixPropertyConfig.yml\" sourcestartlinenumber=\"1\">Describes a <xref href=\"System.Numerics.Matrix4x4\" data-throw-if-not-resolved=\"false\"></xref> configuration property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MaxBoneCountConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MaxBoneCountConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MaxBoneCountConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MaxBoneCountConfig.yml\" sourcestartlinenumber=\"1\">Configures the maximum bone count per mesh for the <xref href=\"SharpAssimp.PostProcessSteps.SplitByBoneCount\" data-throw-if-not-resolved=\"false\"></xref> step. Meshes are\nsplit until the maximum number of bones is reached.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MeasureTimeConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MeasureTimeConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MeasureTimeConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MeasureTimeConfig.yml\" sourcestartlinenumber=\"1\">Configuration to enable time measurements. If enabled, each\npart of the loading process is timed and logged. Default value is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MeshTriangleLimitConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MeshTriangleLimitConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MeshTriangleLimitConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MeshTriangleLimitConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.SplitLargeMeshes\" data-throw-if-not-resolved=\"false\"></xref> step\nthat specifies the maximum number of triangles a mesh can contain. The\ndefault value is MeshTriangleLimitConfigDefaultValue.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MeshVertexLimitConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MeshVertexLimitConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MeshVertexLimitConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MeshVertexLimitConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.SplitLargeMeshes\" data-throw-if-not-resolved=\"false\"></xref> step\nthat specifies the maximum number of vertices a mesh can contain. The\ndefault value is MeshVertexLimitConfigDefaultValue.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.MultithreadingConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.MultithreadingConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.MultithreadingConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.MultithreadingConfig.yml\" sourcestartlinenumber=\"1\">Configuration to set Assimp's multithreading policy. Possible\nvalues are -1 to let Assimp decide, 0 to disable multithreading, or\nany number larger than zero to force a specific number of threads. This\nis only a hint and may be ignored by Assimp. Default value is -1.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.NoSkeletonMeshesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.NoSkeletonMeshesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.NoSkeletonMeshesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.NoSkeletonMeshesConfig.yml\" sourcestartlinenumber=\"1\">Global setting to disable generation of skeleton dummy meshes. These are generated as a visualization aid\nin cases which the input data contains no geometry, but only animation data. So the geometry are visualizing\nthe bones. Default value is false.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.NodeExcludeListConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.NodeExcludeListConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.NodeExcludeListConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.NodeExcludeListConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.OptimizeGraph\" data-throw-if-not-resolved=\"false\"></xref> step\nto preserve nodes matching a name in the given list. Nodes that match the names in the list\nwill not be modified or removed. Identifiers containing whitespaces\n<code>must</code> be enclosed in single quotation marks. The default value is an\nempty string.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.NormalSmoothingAngleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.NormalSmoothingAngleConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.NormalSmoothingAngleConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.NormalSmoothingAngleConfig.yml\" sourcestartlinenumber=\"1\">Configuration to set the maximum angle between two face normals at a vertex when\nthey are smoothed during the step to calculate smooth normals. This is frequently\ncalled the &quot;crease angle&quot;. The maximum and default value is 175 degrees.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.NormalizeVertexComponentsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.NormalizeVertexComponentsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.NormalizeVertexComponentsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.NormalizeVertexComponentsConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.PreTransformVertices\" data-throw-if-not-resolved=\"false\"></xref> step\nto normalize all vertex components into the -1...1 range. The default value is\nfalse.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.OgreMaterialFileConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.OgreMaterialFileConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.OgreMaterialFileConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.OgreMaterialFileConfig.yml\" sourcestartlinenumber=\"1\">The Ogre importer will try to load this MaterialFile. Ogre meshes reference with material names, this does not tell Assimp\nwhere the file is located. Assimp will try to find the source file in the following order: [material-name].material, [mesh-filename-base].material,\nand lastly the material name defined by this config property. The default value is &quot;Scene.Material&quot;.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.yml\" sourcestartlinenumber=\"1\">The Ogre importer will detect the texture usage from the filename. Normally a texture is loaded as a color map, if no target is specified\nin the material file. If this is enabled, then Assimp will try to detect the type from the texture filename postfix:</p>\n<ul><li>Normal Maps: _n, _nrm, _nrml, _normal, _normals, _normalmap</li><li>Specular Maps: _s, _spec, _specular, _specularmap</li><li>Light Maps: _l, _light, _lightmap, _occ, _occlusion</li><li>Displacement Maps: _dis, _displacement</li></ul>\nThe matching is case insensitive. Postfix is taken between the last \"_\" and last \".\". The default behavior is to detect type from lower cased\ntexture unit name by matching against: normalmap, specularmap, lightmap, and displacementmap. For both cases if no match is found then,\n<xref href=\"SharpAssimp.TextureType.Diffuse\" data-throw-if-not-resolved=\"false\"></xref> is used. The default value is false.\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.PropertyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.PropertyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.PropertyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.PropertyConfig.yml\" sourcestartlinenumber=\"1\">Base property config.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.RemoveComponentConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.RemoveComponentConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.RemoveComponentConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.RemoveComponentConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.RemoveComponent\" data-throw-if-not-resolved=\"false\"></xref> step that\nspecifies which parts of the data structure is to be removed. If no valid mesh\nremains after the step, the import fails. The default value i <xref href=\"SharpAssimp.ExcludeComponent.None\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.FindDegenerates\" data-throw-if-not-resolved=\"false\"></xref> step. If true, the area of the triangles are checked\nto see if they are greater than 1e-6. If so, the triangle is removed if <xref href=\"SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig\" data-throw-if-not-resolved=\"false\"></xref> is set to true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.FindDegenerates\" data-throw-if-not-resolved=\"false\"></xref> step to\nremove degenerted primitives from the import immediately. The default value is false,\nwhere degenerated triangles are converted to lines, and degenerated lines to points.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.RemoveEmptyBonesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.RemoveEmptyBonesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.RemoveEmptyBonesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.RemoveEmptyBonesConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the importer removes empty bones or not. Empty bones are often used to define connections for other models (e.g.\nattachment points). Default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.RootTransformationConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.RootTransformationConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.RootTransformationConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.RootTransformationConfig.yml\" sourcestartlinenumber=\"1\">Configuration for <xref href=\"SharpAssimp.PostProcessSteps.PreTransformVertices\" data-throw-if-not-resolved=\"false\"></xref> that sets a user defined matrix as the scene root node transformation before\ntransforming vertices. Default value is the identity matrix.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.SMDKeyFrameImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.SMDKeyFrameImportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.SMDKeyFrameImportConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.SMDKeyFrameImportConfig.yml\" sourcestartlinenumber=\"1\">Sets the vertex animation keyframe to be imported. Assimp does not support vertex keyframes (only\nbone animation is supported). the library reads only one keyframe with vertex animations. By default this is the\nfirst frame. This config sets the global override for the SMD format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.SmdLoadAnimationListConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.SmdLoadAnimationListConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.SmdLoadAnimationListConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.SmdLoadAnimationListConfig.yml\" sourcestartlinenumber=\"1\">Specifies whether the importer will load multiple animations. Default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.SortByPrimitiveTypeConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.SortByPrimitiveTypeConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.SortByPrimitiveTypeConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.SortByPrimitiveTypeConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.SortByPrimitiveType\" data-throw-if-not-resolved=\"false\"></xref> step that\nspecifies which primitive types are to be removed by the step. Specifying all\nprimitive types is illegal. The default value is zero specifying none.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.StringPropertyConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.StringPropertyConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.StringPropertyConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.StringPropertyConfig.yml\" sourcestartlinenumber=\"1\">Describes a string configuration property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.TangentSmoothingAngleConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.TangentSmoothingAngleConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.TangentSmoothingAngleConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.TangentSmoothingAngleConfig.yml\" sourcestartlinenumber=\"1\">Configuration to set the maximum angle that may be between two vertex tangents/bitangents\nwhen they are smoothed during the step to calculate the tangent basis. The default\nvalue is 45 degrees.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.TangentTextureChannelIndexConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.TangentTextureChannelIndexConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.TangentTextureChannelIndexConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.TangentTextureChannelIndexConfig.yml\" sourcestartlinenumber=\"1\">Configures which texture channel is used for tangent space computations. The channel must exist or an error will be raised.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.TerragenComputeTexCoordsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.TerragenComputeTexCoordsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.TerragenComputeTexCoordsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.TerragenComputeTexCoordsConfig.yml\" sourcestartlinenumber=\"1\">Configures the terragen import plugin to compute UV's for terrains, if\nthey are not given. Furthermore, a default texture is assigned. The default value is false.</p>\n<p>UV coordinates for terrains are so simple to compute that you'll usually \nwant to compute them on your own, if you need them. This option is intended for model viewers which\nwant to offer an easy way to apply textures to terrains.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.TransformUVConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.TransformUVConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.TransformUVConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.TransformUVConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.TransformUVCoords\" data-throw-if-not-resolved=\"false\"></xref> step that\nspecifies which UV transformations are to be evaluated. The default value\nis for all combinations (scaling, rotation, translation).</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.UnrealHandleFlagsConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.UnrealHandleFlagsConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.UnrealHandleFlagsConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.UnrealHandleFlagsConfig.yml\" sourcestartlinenumber=\"1\">Configures the UNREAL 3D loader to separate faces with different surface flags (e.g. two-sided vs single-sided).\nThe default value is true.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.UnrealKeyFrameImportConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.UnrealKeyFrameImportConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.UnrealKeyFrameImportConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.UnrealKeyFrameImportConfig.yml\" sourcestartlinenumber=\"1\">Sets the vertex animation keyframe to be imported. Assimp does not support vertex keyframes (only\nbone animation is supported). the library reads only one keyframe with vertex animations. By default this is the\nfirst frame. This config sets the global override for the Unreal format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.VertexBoneWeightLimitConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.VertexBoneWeightLimitConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.VertexBoneWeightLimitConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.VertexBoneWeightLimitConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.LimitBoneWeights\" data-throw-if-not-resolved=\"false\"></xref> step\nthat specifies the maximum number of bone weights per vertex. The default\nvalue is VertexBoneWeightLimitConfigDefaultValue.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.VertexCacheSizeConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.VertexCacheSizeConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.VertexCacheSizeConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.VertexCacheSizeConfig.yml\" sourcestartlinenumber=\"1\">Configuration for the <xref href=\"SharpAssimp.PostProcessSteps.ImproveCacheLocality\" data-throw-if-not-resolved=\"false\"></xref> step\nthat specifies the size of the post-transform vertex cache. The size is\ngiven in number of vertices and the default value is VertexCacheSizeConfigDefaultValue.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.XFileUseDoublesConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.XFileUseDoublesConfig.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs.XFileUseDoublesConfig",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.XFileUseDoublesConfig.yml\" sourcestartlinenumber=\"1\">Specifies if the X-file exporter should use 64-bit doubles rather than 32-bit floats.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Configs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Configs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Configs",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ConsoleLogStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ConsoleLogStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ConsoleLogStream",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ConsoleLogStream.yml\" sourcestartlinenumber=\"1\">Log stream that writes messages to the Console.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.DefaultLogStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.DefaultLogStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.DefaultLogStream",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.DefaultLogStream.yml\" sourcestartlinenumber=\"1\">Enumerates predefined log streaming destinations.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.EmbeddedTexture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.EmbeddedTexture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.EmbeddedTexture",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.EmbeddedTexture.yml\" sourcestartlinenumber=\"1\">Represents an embedded texture. Some file formats directly embed texture assets.\nEmbedded textures may be uncompressed, where the data is given in an uncompressed format.\nOr it may be compressed in a format like png or jpg. In the latter case, the raw\nfile bytes are given so the application must utilize an image decoder (e.g. DevIL) to\nget access to the actual color data. This object represents both types, so some properties may or may not be valid depending\nif it is compressed or not.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ExcludeComponent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ExcludeComponent.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ExcludeComponent",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ExcludeComponent.yml\" sourcestartlinenumber=\"1\">Enumerates components of the scene or mesh data that\ncan be excluded from the import using the post process step\nRemoveComponent.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ExportDataBlob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ExportDataBlob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ExportDataBlob",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ExportDataBlob.yml\" sourcestartlinenumber=\"1\">Describes a blob of exported scene data. Blobs can be nested - each blob may reference another blob, which in\nturn can reference another and so on. This is used to allow exporters to write more than one output for a given\nscene, such as material files. Existence of such files depends on the format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ExportFormatDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ExportFormatDescription.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ExportFormatDescription",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ExportFormatDescription.yml\" sourcestartlinenumber=\"1\">Describes a file format which Assimp can export to.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Face.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Face.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Face",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Face.yml\" sourcestartlinenumber=\"1\">A single face in a mesh, referring to multiple vertices. This can be a triangle\nif the index count is equal to three, or a polygon if the count is greater than three.</p>\n<p sourcefile=\"api/SharpAssimp.Face.yml\" sourcestartlinenumber=\"4\">Since multiple primitive types can be contained in a single mesh, this approach\nallows you to better examine how the mesh is constructed. If you use the <xref href=\"SharpAssimp.PostProcessSteps.SortByPrimitiveType\" data-throw-if-not-resolved=\"false\"></xref>\npost process step flag during import, then each mesh will be homogenous where primitive type is concerned.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.FileIOMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.FileIOMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.FileIOMode",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.FileIOMode.yml\" sourcestartlinenumber=\"1\">Defines the desired file I/O mode is when opening a new file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.FileIOSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.FileIOSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.FileIOSystem",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.FileIOSystem.yml\" sourcestartlinenumber=\"1\">Simple implementation of an IOSystem that searches for files on the disk. This implementation\ncan be given a number of search directories that it will attempt to locate the file in first, before\nusing the file path given by Assimp. That way, you can load models that have files distributed in a number of other\ndirectories besides the root model's.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.FreeNativeDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.FreeNativeDelegate.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.FreeNativeDelegate",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.FreeNativeDelegate.yml\" sourcestartlinenumber=\"1\">Delegate for performing unmanaged memory cleanup.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.IMarshalable-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.IMarshalable-2.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.IMarshalable<Managed, Native>",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.IMarshalable-2.yml\" sourcestartlinenumber=\"1\">Represents an object that can be marshaled to and from a native representation.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.INativeCustomMarshaler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.INativeCustomMarshaler.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.INativeCustomMarshaler",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.INativeCustomMarshaler.yml\" sourcestartlinenumber=\"1\">Custom marshaler for usage with the <xref href=\"SharpAssimp.MemoryHelper\" data-throw-if-not-resolved=\"false\"></xref> for performing marshaling\nto-and-from unmanaged memory for non-blittable types. A type must be attributed with <xref href=\"SharpAssimp.NativeCustomMarshalerAttribute\" data-throw-if-not-resolved=\"false\"></xref>\nto automatically have an instance of its marshaler be utilized.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.IOStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.IOStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.IOStream",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.IOStream.yml\" sourcestartlinenumber=\"1\">Defines a stream to some file input or output source. This object is responsible for reading/writing data\nthat is used by Assimp.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.IOSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.IOSystem.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.IOSystem",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.IOSystem.yml\" sourcestartlinenumber=\"1\">Defines a custom IO handler that can be registered to an importer that will handle I/O for assimp. This includes searching/opening\nfiles to read during import, and creating/writing to files during export.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ImporterDescription.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ImporterDescription.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ImporterDescription",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ImporterDescription.yml\" sourcestartlinenumber=\"1\">Metadata and feature support information for a given importer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ImporterFeatureFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ImporterFeatureFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ImporterFeatureFlags",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ImporterFeatureFlags.yml\" sourcestartlinenumber=\"1\">Defines flags that indicate level of support for common features for a given importer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Light.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Light.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Light",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Light.yml\" sourcestartlinenumber=\"1\">Describes a light source in the scene. Assimp supports multiple light sources\nincluding spot, point, and directional lights. All are defined by a single structure\nand distinguished by their parameters. Lights have corresponding nodes in the scenegraph.</p>\n<p>Some file formats such as 3DS and ASE export a \"target point\", e.g. the point\na spot light is looking at (it can even be animated). Assimp writes the target point as a subnode\nof a spotlight's main node called \"spotName.Target\". However, this is just additional information\nthen, the transform tracks of the main node make the spot light already point in the right direction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.LightSourceType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.LightSourceType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.LightSourceType",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.LightSourceType.yml\" sourcestartlinenumber=\"1\">Enumerates all supported light sources.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.LogStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.LogStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.LogStream",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.LogStream.yml\" sourcestartlinenumber=\"1\">Represents a log stream, which receives all log messages and streams them somewhere.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.LoggingCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.LoggingCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.LoggingCallback",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.LoggingCallback.yml\" sourcestartlinenumber=\"1\">Callback delegate for Assimp's LogStream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Material.PBRMaterialProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Material.PBRMaterialProperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Material.PBRMaterialProperties",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Material.PBRMaterialProperties.yml\" sourcestartlinenumber=\"1\">Groups all PBR workflow properties into a single accessor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Material.ShaderMaterialProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Material.ShaderMaterialProperties.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Material.ShaderMaterialProperties",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Material.ShaderMaterialProperties.yml\" sourcestartlinenumber=\"1\">Groups all the properties for shader sources in a single accessor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Material.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Material.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Material",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Material.yml\" sourcestartlinenumber=\"1\">A material contains all the information that describes how to render a mesh. E.g. textures, colors, and render states. Internally\nall this information is stored as key-value pair properties. The class contains many convienence methods and properties for\naccessing non-texture/texture properties without having to know the Assimp material key names. Not all properties may be present,\nand if they aren't a default value will be returned.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MaterialProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MaterialProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MaterialProperty",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MaterialProperty.yml\" sourcestartlinenumber=\"1\">A key-value pairing that represents some material property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Matrix3x3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Matrix3x3.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Matrix3x3",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Matrix3x3.yml\" sourcestartlinenumber=\"1\">Represents a 3x3 matrix. Assimp docs say their matrices are always row-major,\nand it looks like they're only describing the memory layout. Matrices are treated\nas column vectors however (X base in the first column, Y base the second, and Z base the third)</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MemoryHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MemoryHelper.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MemoryHelper",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MemoryHelper.yml\" sourcestartlinenumber=\"1\">Helper static class containing functions that aid dealing with unmanaged memory to managed memory conversions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Mesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Mesh.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Mesh",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Mesh.yml\" sourcestartlinenumber=\"1\">A mesh represents geometry with a single material.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MeshAnimationAttachment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MeshAnimationAttachment.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MeshAnimationAttachment",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MeshAnimationAttachment.yml\" sourcestartlinenumber=\"1\">A mesh attachment store per-vertex animations for a particular frame. You may\nthink of this as a 'patch' for the host mesh, since the mesh attachment replaces only certain\nvertex data streams at a particular time. Each mesh stores 'n' attached meshes. The actual\nrelationship between the time line and mesh attachments is established by the mesh animation channel,\nwhich references singular mesh attachments by their ID and binds them to a time offset.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MeshAnimationChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MeshAnimationChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MeshAnimationChannel",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MeshAnimationChannel.yml\" sourcestartlinenumber=\"1\">Describes vertex-based animations for a single mesh or a group of meshes. Meshes\ncarry the animation data for each frame. The purpose of this object is to define\nkeyframes, linking each mesh attachment to a particular point in a time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MeshKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MeshKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MeshKey",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MeshKey.yml\" sourcestartlinenumber=\"1\">Binds an anim mesh (referenced by an index) to a specific point in time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MeshMorphAnimationChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MeshMorphAnimationChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MeshMorphAnimationChannel",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MeshMorphAnimationChannel.yml\" sourcestartlinenumber=\"1\">Describes morph-based keyframe animations for a single mesh or a group of meshes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MeshMorphKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MeshMorphKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MeshMorphKey",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MeshMorphKey.yml\" sourcestartlinenumber=\"1\">Binds a morph animation mesh to a specific point in time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MeshMorphingMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MeshMorphingMethod.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MeshMorphingMethod",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MeshMorphingMethod.yml\" sourcestartlinenumber=\"1\">Defines the methods of mesh morphing supported.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.MetaDataType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.MetaDataType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.MetaDataType",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.MetaDataType.yml\" sourcestartlinenumber=\"1\">Enumerates metadata data types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Metadata.Entry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Metadata.Entry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Metadata.Entry",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Metadata.Entry.yml\" sourcestartlinenumber=\"1\">Represents an entry in a metadata container.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Metadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Metadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Metadata",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Metadata.yml\" sourcestartlinenumber=\"1\">Represents a container for holding metadata, representing as key-value pairs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.NativeCustomMarshalerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.NativeCustomMarshalerAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.NativeCustomMarshalerAttribute",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.NativeCustomMarshalerAttribute.yml\" sourcestartlinenumber=\"1\">Attribute for assocating a type with an <xref href=\"SharpAssimp.INativeCustomMarshaler\" data-throw-if-not-resolved=\"false\"></xref> instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Node.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Node.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Node",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Node.yml\" sourcestartlinenumber=\"1\">A node in the imported model hierarchy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.NodeAnimationChannel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.NodeAnimationChannel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.NodeAnimationChannel",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.NodeAnimationChannel.yml\" sourcestartlinenumber=\"1\">Describes the animation of a single node. The name specifies the bone/node which is affected by\nthis animation chanenl. The keyframes are given in three separate seties of values,\none for each position, rotation, and scaling. The transformation matrix is computed from\nthese values and replaces the node's original transformation matrix at a specific time.</p>\n<p>This means all keys are absolute and not relative to the bone default pose.\nThe order which the transformations are to be applied is scaling, rotation, and translation (SRT).</p>\n<p>Keys are in chronological order and duplicate keys do not pass the validation step. There most likely will be no\nnegative time values, but they are not forbidden.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.NodeCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.NodeCollection.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.NodeCollection",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.NodeCollection.yml\" sourcestartlinenumber=\"1\">A collection of child nodes owned by a parent node. Manages access to the collection while maintaing parent-child linkage.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Origin.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Origin.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Origin",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Origin.yml\" sourcestartlinenumber=\"1\">Seek origins for Assimp's virtual file system API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.PostProcessPreset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.PostProcessPreset.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.PostProcessPreset",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.PostProcessPreset.yml\" sourcestartlinenumber=\"1\">Static class containing preset properties for post processing options.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.PostProcessSteps.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.PostProcessSteps.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.PostProcessSteps",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.PostProcessSteps.yml\" sourcestartlinenumber=\"1\">Post processing flag options, specifying a number of steps\nthat can be run on the data to either generate additional vertex\ndata or optimize the imported data.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.PrimitiveType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.PrimitiveType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.PrimitiveType",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.PrimitiveType.yml\" sourcestartlinenumber=\"1\">Enumerates geometric primitive types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.PropertyType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.PropertyType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.PropertyType",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.PropertyType.yml\" sourcestartlinenumber=\"1\">Defines material property types.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.QuaternionKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.QuaternionKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.QuaternionKey",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.QuaternionKey.yml\" sourcestartlinenumber=\"1\">Time-value pair specifying a rotation for a given time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Ray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Ray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Ray",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Ray.yml\" sourcestartlinenumber=\"1\">Defines a 3D ray with a point of origin and a direction.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ReturnCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ReturnCode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ReturnCode",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ReturnCode.yml\" sourcestartlinenumber=\"1\">Enumerates Assimp function result codes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Scene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Scene.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Scene",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Scene.yml\" sourcestartlinenumber=\"1\">Represents a completely imported model or scene. Everything that was imported from the given file can be\naccessed from here. Once the scene is loaded from unmanaged memory, it resides solely in managed memory\nand Assimp's read only copy is released.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.SceneFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.SceneFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.SceneFlags",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.SceneFlags.yml\" sourcestartlinenumber=\"1\">Defines the state of the imported scene data structure.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.ShadingMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.ShadingMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.ShadingMode",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.ShadingMode.yml\" sourcestartlinenumber=\"1\">Defines all shading models supported by the library.</p>\n<p>\nThe list of shading modes has been taken from Blender. See Blender\ndocumentation for more information.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Texel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Texel.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Texel",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Texel.yml\" sourcestartlinenumber=\"1\">Represents a texel in ARGB8888 format.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.TextureFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.TextureFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.TextureFlags",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.TextureFlags.yml\" sourcestartlinenumber=\"1\">Defines some mixed flags for a particular texture. This corresponds\nto the AI_MAT_KEY_TEXFLAGS property.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.TextureMapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.TextureMapping.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.TextureMapping",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.TextureMapping.yml\" sourcestartlinenumber=\"1\">Defines how texture coordinates are generated</p>\n<p>\nReal-time applications typically require full UV coordinates. So the use\nof <xref href=\"SharpAssimp.PostProcessSteps.GenerateUVCoords\" data-throw-if-not-resolved=\"false\"></xref> step is highly recommended.\nIt generates proper UV channels for non-UV mapped objects, as long as an accurate\ndescription of how the mapping should look like is given.\n</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.TextureOperation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.TextureOperation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.TextureOperation",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.TextureOperation.yml\" sourcestartlinenumber=\"1\">Defines how the Nth texture of a specific type is combined\nwith the result of all previous layers.</p>\n<p>\nExample (left: key, right: value):\n<pre><code class=\"lang-csharp\">DiffColor0     - gray\nDiffTextureOp0 - TextureOperation.Multiply\nDiffTexture0   - tex1.png\nDiffTextureOp0 - TextureOperation.Add\nDiffTexture1   - tex2.png</code></pre>\n<p>\nWritten as an equation, the final diffuse term for a specific\npixel would be:\n</p>\n<pre><code class=\"lang-csharp\">diffFinal = DiffColor0 * sampleTex(DiffTexture0, UV0) + sampleTex(DiffTexture1, UV0) * diffContrib;</code></pre>\n\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.TextureSlot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.TextureSlot.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.TextureSlot",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.TextureSlot.yml\" sourcestartlinenumber=\"1\">Describes all the values pertaining to a particular texture slot in a material.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.TextureType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.TextureType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.TextureType",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.TextureType.yml\" sourcestartlinenumber=\"1\">Defines the purpose of a texture.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.TextureWrapMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.TextureWrapMode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.TextureWrapMode",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.TextureWrapMode.yml\" sourcestartlinenumber=\"1\">Defines how UV coordinates outside the [0..1] range are handled. Commonly\nreferred to as the 'wrapping mode'</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.UVTransform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.UVTransform.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.UVTransform",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.UVTransform.yml\" sourcestartlinenumber=\"1\">Defines how an UV channel is transformed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.UVTransformFlags.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.UVTransformFlags.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.UVTransformFlags",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.UVTransformFlags.yml\" sourcestartlinenumber=\"1\">Defines how UV coordinates should be transformed.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiAnimMesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiAnimMesh.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiAnimMesh",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiAnimMesh.yml\" sourcestartlinenumber=\"1\">Represents an aiAnimMesh struct. Note: This structure requires marshaling, due to the array of IntPtrs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiAnimation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiAnimation.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiAnimation",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiAnimation.yml\" sourcestartlinenumber=\"1\">Represents an aiAnimation struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiBone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiBone.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiBone",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiBone.yml\" sourcestartlinenumber=\"1\">Represents an aiBone struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiCamera.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiCamera.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiCamera",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiCamera.yml\" sourcestartlinenumber=\"1\">Represents an aiCamera struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiConfigs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiConfigs.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiConfigs",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiConfigs.yml\" sourcestartlinenumber=\"1\">Defines configurable properties for importing models. All properties\nhave default values. Setting config properties are done via the SetProperty*\nmethods in AssimpMethods.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiDefines.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiDefines.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiDefines",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiDefines.yml\" sourcestartlinenumber=\"1\">Static class that has a number of constants that are found in Assimp. These can be limits to configuration property default values. The constants\nare grouped according to their usage or where they're found in the Assimp include files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiExportDataBlob.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiExportDataBlob.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiExportDataBlob",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiExportDataBlob.yml\" sourcestartlinenumber=\"1\">Describes a blob of exported scene data. Blobs can be nested, the first blob always has an empty name. Nested\nblobs represent auxillary files produced by the exporter (e.g. material files) and are named accordingly.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiExportFormatDesc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiExportFormatDesc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiExportFormatDesc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiExportFormatDesc.yml\" sourcestartlinenumber=\"1\">Describes a file format which Assimp can export to.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFace.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFace.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFace",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFace.yml\" sourcestartlinenumber=\"1\">Represents an aiFace struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFile.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFile.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFile",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFile.yml\" sourcestartlinenumber=\"1\">Contains callbacks to read and write to a file opened by a custom file system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileCloseProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileCloseProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileCloseProc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileCloseProc.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to close a given file and free its memory.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileFlushProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileFlushProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileFlushProc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileFlushProc.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to flush the contents of the file to the disk.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileIO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileIO.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileIO",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileIO.yml\" sourcestartlinenumber=\"1\">Contains callbacks to implement a custom file system to open and close files.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileOpenProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileOpenProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileOpenProc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileOpenProc.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to open a given file and create a new AiFile instance.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileReadProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileReadProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileReadProc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileReadProc.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to read from a file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileSeek.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileSeek.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileSeek",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileSeek.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to set the current position of the file cursor.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileTellProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileTellProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileTellProc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileTellProc.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to tell offset/size information about the file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiFileWriteProc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiFileWriteProc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiFileWriteProc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiFileWriteProc.yml\" sourcestartlinenumber=\"1\">Callback delegate for a custom file system, to write to a file.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiImporterDesc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiImporterDesc.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiImporterDesc",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiImporterDesc.yml\" sourcestartlinenumber=\"1\">Describes a variety of information about an importer.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiLight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiLight.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiLight",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiLight.yml\" sourcestartlinenumber=\"1\">Represents an aiLight struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiLogStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiLogStream.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiLogStream",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiLogStream.yml\" sourcestartlinenumber=\"1\">Represents a log stream, which receives all log messages and streams them somewhere.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiLogStreamCallback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiLogStreamCallback.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiLogStreamCallback",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiLogStreamCallback.yml\" sourcestartlinenumber=\"1\">Callback delegate for Assimp's LogStream.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMatKeys.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMatKeys.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMatKeys",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMatKeys.yml\" sourcestartlinenumber=\"1\">Static class containing material key constants. A fully qualified mat key\nname here means that it's a string that combines the mat key (base) name, its\ntexture type semantic, and its texture index into a single string delimited by\ncommas. For non-texture material properties, the texture type semantic and texture\nindex are always zero.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMaterial.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMaterial",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMaterial.yml\" sourcestartlinenumber=\"1\">Represents an aiMaterial struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMaterialProperty.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMaterialProperty.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMaterialProperty",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMaterialProperty.yml\" sourcestartlinenumber=\"1\">Represents an aiMaterialProperty struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMemoryInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMemoryInfo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMemoryInfo",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMemoryInfo.yml\" sourcestartlinenumber=\"1\">Represents the memory requirements for the different components of an imported\nscene. All sizes in in bytes.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMesh.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMesh",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMesh.yml\" sourcestartlinenumber=\"1\">Represents an aiMesh struct. Note: This structure requires marshaling, due to the arrays of IntPtrs.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMeshAnim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMeshAnim.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMeshAnim",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMeshAnim.yml\" sourcestartlinenumber=\"1\">Represents an aiMeshAnim struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMeshColorArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMeshColorArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMeshColorArray",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMeshColorArray.yml\" sourcestartlinenumber=\"1\">Fixed length array for representing the color channels of a mesh. Length is equal\nto <xref href=\"SharpAssimp.Unmanaged.AiDefines.AI_MAX_NUMBER_OF_COLOR_SETS\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMeshMorphAnim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMeshMorphAnim.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMeshMorphAnim",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMeshMorphAnim.yml\" sourcestartlinenumber=\"1\">Represents an aiMeshMorphAnim struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMeshMorphKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMeshMorphKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMeshMorphKey",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMeshMorphKey.yml\" sourcestartlinenumber=\"1\">Represents an aiMeshMorphKey struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray.yml\" sourcestartlinenumber=\"1\">Fixed length array for representing the texture coordinate channels of a mesh. Length is equal\nto <xref href=\"SharpAssimp.Unmanaged.AiDefines.AI_MAX_NUMBER_OF_TEXTURECOORDS\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMeshUVComponentArray.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMeshUVComponentArray.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMeshUVComponentArray",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMeshUVComponentArray.yml\" sourcestartlinenumber=\"1\">Fixed length array for representing the number of UV components for each texture coordinate channel of a mesh. Length is equal\nto <xref href=\"SharpAssimp.Unmanaged.AiDefines.AI_MAX_NUMBER_OF_TEXTURECOORDS\" data-throw-if-not-resolved=\"false\"></xref>.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMetadata.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMetadata.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMetadata",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMetadata.yml\" sourcestartlinenumber=\"1\">Represents an aiMetadata struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiMetadataEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiMetadataEntry.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiMetadataEntry",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiMetadataEntry.yml\" sourcestartlinenumber=\"1\">Represents an aiMetadataEntry struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiNode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiNode.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiNode",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiNode.yml\" sourcestartlinenumber=\"1\">Represents an aiNode struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiNodeAnim.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiNodeAnim.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiNodeAnim",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiNodeAnim.yml\" sourcestartlinenumber=\"1\">Represents an aiNodeAnim struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiScene.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiScene.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiScene",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiScene.yml\" sourcestartlinenumber=\"1\">Represents an aiScene struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiString.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiString",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiString.yml\" sourcestartlinenumber=\"1\">Represents an aiString struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AiTexture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AiTexture.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AiTexture",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AiTexture.yml\" sourcestartlinenumber=\"1\">Represents an aiTexture struct.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.AssimpLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.AssimpLibrary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.AssimpLibrary",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.AssimpLibrary.yml\" sourcestartlinenumber=\"1\">Singleton that governs access to the unmanaged Assimp library functions.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.Platform.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.Platform.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.Platform",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.Platform.yml\" sourcestartlinenumber=\"1\">Enumerates supported platforms.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute.yml\" sourcestartlinenumber=\"1\">An attribute that represents the name of an unmanaged function to import.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.UnmanagedLibrary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.UnmanagedLibrary.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.UnmanagedLibrary",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.UnmanagedLibrary.yml\" sourcestartlinenumber=\"1\">Represents management and access to an unmanaged library. An unmanaged library can be loaded and unloaded dynamically. The library then searches for a list\nof exported functions to create managed delegates for, allowing callers to access the library. Each OS platform has its own implementation to determine how to load\nunmanaged libraries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.UnmanagedLibraryResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.UnmanagedLibraryResolver.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged.UnmanagedLibraryResolver",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Unmanaged.UnmanagedLibraryResolver.yml\" sourcestartlinenumber=\"1\">Resolves unmanaged DLLs for <xref href=\"SharpAssimp.Unmanaged.UnmanagedLibrary\" data-throw-if-not-resolved=\"false\"></xref>. The process is completely configurable, where the user can supply alternative library names (e.g. versioned libs),\nan override library name, and probing paths. These can be set for both 32/64 bit, or seperately for 32 or 64 bit. See <xref href=\"SharpAssimp.Unmanaged.UnmanagedLibraryResolver.ResolveLibraryPath(System.String)\" data-throw-if-not-resolved=\"false\"></xref>\nfor the search strategy.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.Unmanaged.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.Unmanaged.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.Unmanaged",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.VectorKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.VectorKey.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.VectorKey",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.VectorKey.yml\" sourcestartlinenumber=\"1\">Time-value pair specifying a 3D vector for a given time.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.VertexWeight.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.VertexWeight.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp.VertexWeight",
+      "Summary": "<p sourcefile=\"api/SharpAssimp.VertexWeight.yml\" sourcestartlinenumber=\"1\">Represents a single influence of a bone on a vertex.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/SharpAssimp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/SharpAssimp.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "SharpAssimp",
+      "Summary": null
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

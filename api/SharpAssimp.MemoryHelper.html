@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class MemoryHelper </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class MemoryHelper ">
+    
+    <meta name="description" content="Helper static class containing functions that aid dealing with unmanaged memory to managed memory conversions.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/JeremyAnsel/SharpAssimp" title="Source Code">Source Code</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.html" title="SharpAssimp" class="">SharpAssimp</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AnimationBehaviour.html" title="AnimationBehaviour" class="">AnimationBehaviour</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AnimationInterpolation.html" title="AnimationInterpolation" class="">AnimationInterpolation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AssimpContext.html" title="AssimpContext" class="">AssimpContext</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AssimpException.html" title="AssimpException" class="">AssimpException</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.BlendMode.html" title="BlendMode" class="">BlendMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Bone.html" title="Bone" class="">Bone</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.BoundingBox.html" title="BoundingBox" class="">BoundingBox</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Camera.html" title="Camera" class="">Camera</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.CompileFlags.html" title="CompileFlags" class="">CompileFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ConsoleLogStream.html" title="ConsoleLogStream" class="">ConsoleLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.DefaultLogStream.html" title="DefaultLogStream" class="">DefaultLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.EmbeddedTexture.html" title="EmbeddedTexture" class="">EmbeddedTexture</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExcludeComponent.html" title="ExcludeComponent" class="">ExcludeComponent</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExportDataBlob.html" title="ExportDataBlob" class="">ExportDataBlob</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExportFormatDescription.html" title="ExportFormatDescription" class="">ExportFormatDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Face.html" title="Face" class="">Face</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FileIOMode.html" title="FileIOMode" class="">FileIOMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FileIOSystem.html" title="FileIOSystem" class="">FileIOSystem</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FreeNativeDelegate.html" title="FreeNativeDelegate" class="">FreeNativeDelegate</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IMarshalable-2.html" title="IMarshalable&lt;Managed, Native&gt;" class="">IMarshalable&lt;Managed, Native&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.INativeCustomMarshaler.html" title="INativeCustomMarshaler" class="">INativeCustomMarshaler</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IOStream.html" title="IOStream" class="">IOStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IOSystem.html" title="IOSystem" class="">IOSystem</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ImporterDescription.html" title="ImporterDescription" class="">ImporterDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ImporterFeatureFlags.html" title="ImporterFeatureFlags" class="">ImporterFeatureFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Light.html" title="Light" class="">Light</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LightSourceType.html" title="LightSourceType" class="">LightSourceType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LogStream.html" title="LogStream" class="">LogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LoggingCallback.html" title="LoggingCallback" class="">LoggingCallback</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.html" title="Material" class="">Material</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.PBRMaterialProperties.html" title="Material.PBRMaterialProperties" class="">Material.PBRMaterialProperties</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.ShaderMaterialProperties.html" title="Material.ShaderMaterialProperties" class="">Material.ShaderMaterialProperties</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MaterialProperty.html" title="MaterialProperty" class="">MaterialProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Matrix3x3.html" title="Matrix3x3" class="">Matrix3x3</a>
+                          </li>
+                          <li class="active">
+                            <a href="SharpAssimp.MemoryHelper.html" title="MemoryHelper" class="active">MemoryHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Mesh.html" title="Mesh" class="">Mesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshAnimationAttachment.html" title="MeshAnimationAttachment" class="">MeshAnimationAttachment</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshAnimationChannel.html" title="MeshAnimationChannel" class="">MeshAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshKey.html" title="MeshKey" class="">MeshKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphAnimationChannel.html" title="MeshMorphAnimationChannel" class="">MeshMorphAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphKey.html" title="MeshMorphKey" class="">MeshMorphKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphingMethod.html" title="MeshMorphingMethod" class="">MeshMorphingMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MetaDataType.html" title="MetaDataType" class="">MetaDataType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Metadata.html" title="Metadata" class="">Metadata</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Metadata.Entry.html" title="Metadata.Entry" class="">Metadata.Entry</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NativeCustomMarshalerAttribute.html" title="NativeCustomMarshalerAttribute" class="">NativeCustomMarshalerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Node.html" title="Node" class="">Node</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NodeAnimationChannel.html" title="NodeAnimationChannel" class="">NodeAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NodeCollection.html" title="NodeCollection" class="">NodeCollection</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Origin.html" title="Origin" class="">Origin</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PostProcessPreset.html" title="PostProcessPreset" class="">PostProcessPreset</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PostProcessSteps.html" title="PostProcessSteps" class="">PostProcessSteps</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PrimitiveType.html" title="PrimitiveType" class="">PrimitiveType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PropertyType.html" title="PropertyType" class="">PropertyType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.QuaternionKey.html" title="QuaternionKey" class="">QuaternionKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Ray.html" title="Ray" class="">Ray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ReturnCode.html" title="ReturnCode" class="">ReturnCode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Scene.html" title="Scene" class="">Scene</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.SceneFlags.html" title="SceneFlags" class="">SceneFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ShadingMode.html" title="ShadingMode" class="">ShadingMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Texel.html" title="Texel" class="">Texel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureFlags.html" title="TextureFlags" class="">TextureFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureMapping.html" title="TextureMapping" class="">TextureMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureOperation.html" title="TextureOperation" class="">TextureOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureSlot.html" title="TextureSlot" class="">TextureSlot</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureType.html" title="TextureType" class="">TextureType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureWrapMode.html" title="TextureWrapMode" class="">TextureWrapMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.UVTransform.html" title="UVTransform" class="">UVTransform</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.UVTransformFlags.html" title="UVTransformFlags" class="">UVTransformFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.VectorKey.html" title="VectorKey" class="">VectorKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.VertexWeight.html" title="VertexWeight" class="">VertexWeight</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.Configs.html" title="SharpAssimp.Configs" class="">SharpAssimp.Configs</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ACEvaluateSubdivisionConfig.html" title="ACEvaluateSubdivisionConfig" class="">ACEvaluateSubdivisionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ACSeparateBackfaceCullConfig.html" title="ACSeparateBackfaceCullConfig" class="">ACSeparateBackfaceCullConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ASEReconstructNormalsConfig.html" title="ASEReconstructNormalsConfig" class="">ASEReconstructNormalsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.AnimationAccuracyConfig.html" title="AnimationAccuracyConfig" class="">AnimationAccuracyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.AppScaleConfig.html" title="AppScaleConfig" class="">AppScaleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.BooleanPropertyConfig.html" title="BooleanPropertyConfig" class="">BooleanPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig.html" title="ColladaIgnoreUpDirectionConfig" class="">ColladaIgnoreUpDirectionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ColladaUseColladaNamesConfig.html" title="ColladaUseColladaNamesConfig" class="">ColladaUseColladaNamesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.DeboneAllOrNoneConfig.html" title="DeboneAllOrNoneConfig" class="">DeboneAllOrNoneConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.DeboneThresholdConfig.html" title="DeboneThresholdConfig" class="">DeboneThresholdConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ExportPointCloudsConfig.html" title="ExportPointCloudsConfig" class="">ExportPointCloudsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXConvertToMetersConfig.html" title="FBXConvertToMetersConfig" class="">FBXConvertToMetersConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAllGeometryLayersConfig.html" title="FBXImportAllGeometryLayersConfig" class="">FBXImportAllGeometryLayersConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAllMaterialsConfig.html" title="FBXImportAllMaterialsConfig" class="">FBXImportAllMaterialsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAnimationsConfig.html" title="FBXImportAnimationsConfig" class="">FBXImportAnimationsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportCamerasConfig.html" title="FBXImportCamerasConfig" class="">FBXImportCamerasConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig.html" title="FBXImportEmbeddedTexturesConfig" class="">FBXImportEmbeddedTexturesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig.html" title="FBXImportEmbeddedTexturesLegacyNamingConfig" class="">FBXImportEmbeddedTexturesLegacyNamingConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportLightsConfig.html" title="FBXImportLightsConfig" class="">FBXImportLightsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportMaterialsConfig.html" title="FBXImportMaterialsConfig" class="">FBXImportMaterialsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig.html" title="FBXOptimizeEmptyAnimationCurvesConfig" class="">FBXOptimizeEmptyAnimationCurvesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXPreservePivotsConfig.html" title="FBXPreservePivotsConfig" class="">FBXPreservePivotsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXStrictModeConfig.html" title="FBXStrictModeConfig" class="">FBXStrictModeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FavorSpeedConfig.html" title="FavorSpeedConfig" class="">FavorSpeedConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FloatPropertyConfig.html" title="FloatPropertyConfig" class="">FloatPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.GlobalKeyFrameImportConfig.html" title="GlobalKeyFrameImportConfig" class="">GlobalKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.GlobalScaleConfig.html" title="GlobalScaleConfig" class="">GlobalScaleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCCylindricalTessellationConfig.html" title="IFCCylindricalTessellationConfig" class="">IFCCylindricalTessellationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig.html" title="IFCSkipSpaceRepresentationsConfig" class="">IFCSkipSpaceRepresentationsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCSmoothingAngleConfig.html" title="IFCSmoothingAngleConfig" class="">IFCSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCUseCustomTriangulationConfig.html" title="IFCUseCustomTriangulationConfig" class="">IFCUseCustomTriangulationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IRRAnimationFrameRateConfig.html" title="IRRAnimationFrameRateConfig" class="">IRRAnimationFrameRateConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.html" title="IgnoreTextureCoordinatesConfig" class="">IgnoreTextureCoordinatesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IntegerPropertyConfig.html" title="IntegerPropertyConfig" class="">IntegerPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.KeepSceneHierarchyConfig.html" title="KeepSceneHierarchyConfig" class="">KeepSceneHierarchyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWOImportOneLayerConfig.html" title="LWOImportOneLayerConfig" class="">LWOImportOneLayerConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWSAnimationEndConfig.html" title="LWSAnimationEndConfig" class="">LWSAnimationEndConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWSAnimationStartConfig.html" title="LWSAnimationStartConfig" class="">LWSAnimationStartConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD2KeyFrameImportConfig.html" title="MD2KeyFrameImportConfig" class="">MD2KeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3HandleMultiPartConfig.html" title="MD3HandleMultiPartConfig" class="">MD3HandleMultiPartConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3KeyFrameImportConfig.html" title="MD3KeyFrameImportConfig" class="">MD3KeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3ShaderSourceConfig.html" title="MD3ShaderSourceConfig" class="">MD3ShaderSourceConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3SkinNameConfig.html" title="MD3SkinNameConfig" class="">MD3SkinNameConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig.html" title="MD5NoAnimationAutoLoadConfig" class="">MD5NoAnimationAutoLoadConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MDLColorMapConfig.html" title="MDLColorMapConfig" class="">MDLColorMapConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MDLKeyFrameImportConfig.html" title="MDLKeyFrameImportConfig" class="">MDLKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MaterialExcludeListConfig.html" title="MaterialExcludeListConfig" class="">MaterialExcludeListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MatrixPropertyConfig.html" title="MatrixPropertyConfig" class="">MatrixPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MaxBoneCountConfig.html" title="MaxBoneCountConfig" class="">MaxBoneCountConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeasureTimeConfig.html" title="MeasureTimeConfig" class="">MeasureTimeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeshTriangleLimitConfig.html" title="MeshTriangleLimitConfig" class="">MeshTriangleLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeshVertexLimitConfig.html" title="MeshVertexLimitConfig" class="">MeshVertexLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MultithreadingConfig.html" title="MultithreadingConfig" class="">MultithreadingConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NoSkeletonMeshesConfig.html" title="NoSkeletonMeshesConfig" class="">NoSkeletonMeshesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NodeExcludeListConfig.html" title="NodeExcludeListConfig" class="">NodeExcludeListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NormalSmoothingAngleConfig.html" title="NormalSmoothingAngleConfig" class="">NormalSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NormalizeVertexComponentsConfig.html" title="NormalizeVertexComponentsConfig" class="">NormalizeVertexComponentsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.OgreMaterialFileConfig.html" title="OgreMaterialFileConfig" class="">OgreMaterialFileConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.html" title="OgreTextureTypeFromFilenameConfig" class="">OgreTextureTypeFromFilenameConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.PropertyConfig.html" title="PropertyConfig" class="">PropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveComponentConfig.html" title="RemoveComponentConfig" class="">RemoveComponentConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig.html" title="RemoveDegeneratePrimitivesCheckAreaConfig" class="">RemoveDegeneratePrimitivesCheckAreaConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig.html" title="RemoveDegeneratePrimitivesConfig" class="">RemoveDegeneratePrimitivesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveEmptyBonesConfig.html" title="RemoveEmptyBonesConfig" class="">RemoveEmptyBonesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RootTransformationConfig.html" title="RootTransformationConfig" class="">RootTransformationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SMDKeyFrameImportConfig.html" title="SMDKeyFrameImportConfig" class="">SMDKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SmdLoadAnimationListConfig.html" title="SmdLoadAnimationListConfig" class="">SmdLoadAnimationListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SortByPrimitiveTypeConfig.html" title="SortByPrimitiveTypeConfig" class="">SortByPrimitiveTypeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.StringPropertyConfig.html" title="StringPropertyConfig" class="">StringPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TangentSmoothingAngleConfig.html" title="TangentSmoothingAngleConfig" class="">TangentSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TangentTextureChannelIndexConfig.html" title="TangentTextureChannelIndexConfig" class="">TangentTextureChannelIndexConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TerragenComputeTexCoordsConfig.html" title="TerragenComputeTexCoordsConfig" class="">TerragenComputeTexCoordsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TransformUVConfig.html" title="TransformUVConfig" class="">TransformUVConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.UnrealHandleFlagsConfig.html" title="UnrealHandleFlagsConfig" class="">UnrealHandleFlagsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.UnrealKeyFrameImportConfig.html" title="UnrealKeyFrameImportConfig" class="">UnrealKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.VertexBoneWeightLimitConfig.html" title="VertexBoneWeightLimitConfig" class="">VertexBoneWeightLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.VertexCacheSizeConfig.html" title="VertexCacheSizeConfig" class="">VertexCacheSizeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.XFileUseDoublesConfig.html" title="XFileUseDoublesConfig" class="">XFileUseDoublesConfig</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.Unmanaged.html" title="SharpAssimp.Unmanaged" class="">SharpAssimp.Unmanaged</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiAnimMesh.html" title="AiAnimMesh" class="">AiAnimMesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiAnimation.html" title="AiAnimation" class="">AiAnimation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiBone.html" title="AiBone" class="">AiBone</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiCamera.html" title="AiCamera" class="">AiCamera</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiConfigs.html" title="AiConfigs" class="">AiConfigs</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiDefines.html" title="AiDefines" class="">AiDefines</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiExportDataBlob.html" title="AiExportDataBlob" class="">AiExportDataBlob</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiExportFormatDesc.html" title="AiExportFormatDesc" class="">AiExportFormatDesc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFace.html" title="AiFace" class="">AiFace</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFile.html" title="AiFile" class="">AiFile</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileCloseProc.html" title="AiFileCloseProc" class="">AiFileCloseProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileFlushProc.html" title="AiFileFlushProc" class="">AiFileFlushProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileIO.html" title="AiFileIO" class="">AiFileIO</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileOpenProc.html" title="AiFileOpenProc" class="">AiFileOpenProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileReadProc.html" title="AiFileReadProc" class="">AiFileReadProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileSeek.html" title="AiFileSeek" class="">AiFileSeek</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileTellProc.html" title="AiFileTellProc" class="">AiFileTellProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileWriteProc.html" title="AiFileWriteProc" class="">AiFileWriteProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiImporterDesc.html" title="AiImporterDesc" class="">AiImporterDesc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLight.html" title="AiLight" class="">AiLight</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLogStream.html" title="AiLogStream" class="">AiLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLogStreamCallback.html" title="AiLogStreamCallback" class="">AiLogStreamCallback</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMatKeys.html" title="AiMatKeys" class="">AiMatKeys</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMaterial.html" title="AiMaterial" class="">AiMaterial</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMaterialProperty.html" title="AiMaterialProperty" class="">AiMaterialProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMemoryInfo.html" title="AiMemoryInfo" class="">AiMemoryInfo</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMesh.html" title="AiMesh" class="">AiMesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshAnim.html" title="AiMeshAnim" class="">AiMeshAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshColorArray.html" title="AiMeshColorArray" class="">AiMeshColorArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshMorphAnim.html" title="AiMeshMorphAnim" class="">AiMeshMorphAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshMorphKey.html" title="AiMeshMorphKey" class="">AiMeshMorphKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray.html" title="AiMeshTextureCoordinateArray" class="">AiMeshTextureCoordinateArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshUVComponentArray.html" title="AiMeshUVComponentArray" class="">AiMeshUVComponentArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMetadata.html" title="AiMetadata" class="">AiMetadata</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMetadataEntry.html" title="AiMetadataEntry" class="">AiMetadataEntry</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiNode.html" title="AiNode" class="">AiNode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiNodeAnim.html" title="AiNodeAnim" class="">AiNodeAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiScene.html" title="AiScene" class="">AiScene</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiString.html" title="AiString" class="">AiString</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiTexture.html" title="AiTexture" class="">AiTexture</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AssimpLibrary.html" title="AssimpLibrary" class="">AssimpLibrary</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.Platform.html" title="Platform" class="">Platform</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute.html" title="UnmanagedFunctionNameAttribute" class="">UnmanagedFunctionNameAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedLibrary.html" title="UnmanagedLibrary" class="">UnmanagedLibrary</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedLibraryResolver.html" title="UnmanagedLibraryResolver" class="">UnmanagedLibraryResolver</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SharpAssimp.MemoryHelper">
+
+
+
+  <h1 id="SharpAssimp_MemoryHelper" data-uid="SharpAssimp.MemoryHelper" class="text-break">Class MemoryHelper</h1>
+  <div class="markdown level0 summary"><p>Helper static class containing functions that aid dealing with unmanaged memory to managed memory conversions.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">MemoryHelper</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SharpAssimp.html">SharpAssimp</a></h6>
+  <h6><strong>Assembly</strong>: SharpAssimp.dll</h6>
+  <h5 id="SharpAssimp_MemoryHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MemoryHelper</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_AllocateMemory_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.AllocateMemory(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L427">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_AllocateMemory_" data-uid="SharpAssimp.MemoryHelper.AllocateMemory*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_AllocateMemory_System_Int32_System_Int32_" data-uid="SharpAssimp.MemoryHelper.AllocateMemory(System.Int32,System.Int32)">AllocateMemory(int, int)</h4>
+  <div class="markdown level1 summary"><p>Allocates unmanaged memory. This memory should only be freed by this helper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint AllocateMemory(int sizeInBytes, int alignment = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sizeInBytes</span></td>
+        <td><p>Size to allocate</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">alignment</span></td>
+        <td><p>Alignment of the memory, by default aligned along 16-byte boundary.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>Pointer to the allocated unmanaged memory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_AsRef__1_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.AsRef%60%601(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L524">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_AsRef_" data-uid="SharpAssimp.MemoryHelper.AsRef*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_AsRef__1_System_IntPtr_" data-uid="SharpAssimp.MemoryHelper.AsRef``1(System.IntPtr)">AsRef&lt;T&gt;(nint)</h4>
+  <div class="markdown level1 summary"><p>Casts the pointer into a by-ref value of the specified type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ref T AsRef&lt;T&gt;(nint pSrc) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Memory location.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>By-ref value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_ClearMemory_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.ClearMemory(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L503">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_ClearMemory_" data-uid="SharpAssimp.MemoryHelper.ClearMemory*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_ClearMemory_System_IntPtr_System_Int32_" data-uid="SharpAssimp.MemoryHelper.ClearMemory(System.IntPtr,System.Int32)">ClearMemory(nint, int)</h4>
+  <div class="markdown level1 summary"><p>Clears the memory to zero.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearMemory(nint memoryPtr, int sizeInBytesToClear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">memoryPtr</span></td>
+        <td><p>Pointer to the memory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sizeInBytesToClear</span></td>
+        <td><p>Number of bytes, starting from the memory pointer, to clear.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_CopyMemory_System_IntPtr_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.CopyMemory(System.IntPtr%2CSystem.IntPtr%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L546">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_CopyMemory_" data-uid="SharpAssimp.MemoryHelper.CopyMemory*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_CopyMemory_System_IntPtr_System_IntPtr_System_Int32_" data-uid="SharpAssimp.MemoryHelper.CopyMemory(System.IntPtr,System.IntPtr,System.Int32)">CopyMemory(nint, nint, int)</h4>
+  <div class="markdown level1 summary"><p>Performs a memcopy that copies data from the memory pointed to by the source pointer to the memory pointer by the destination pointer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CopyMemory(nint pDest, nint pSrc, int sizeInBytesToCopy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pDest</span></td>
+        <td><p>Destination memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Source memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sizeInBytesToCopy</span></td>
+        <td><p>Number of bytes to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_FreeMemory_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.FreeMemory(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L441">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_FreeMemory_" data-uid="SharpAssimp.MemoryHelper.FreeMemory*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_FreeMemory_System_IntPtr_" data-uid="SharpAssimp.MemoryHelper.FreeMemory(System.IntPtr)">FreeMemory(nint)</h4>
+  <div class="markdown level1 summary"><p>Frees unmanaged memory that was allocated by this helper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FreeMemory(nint memoryPtr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">memoryPtr</span></td>
+        <td><p>Pointer to unmanaged memory to free.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_FreeNativeArray__1_System_IntPtr_System_Int32_SharpAssimp_FreeNativeDelegate_System_Boolean_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.FreeNativeArray%60%601(System.IntPtr%2CSystem.Int32%2CSharpAssimp.FreeNativeDelegate%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L239">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_FreeNativeArray_" data-uid="SharpAssimp.MemoryHelper.FreeNativeArray*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_FreeNativeArray__1_System_IntPtr_System_Int32_SharpAssimp_FreeNativeDelegate_System_Boolean_" data-uid="SharpAssimp.MemoryHelper.FreeNativeArray``1(System.IntPtr,System.Int32,SharpAssimp.FreeNativeDelegate,System.Boolean)">FreeNativeArray&lt;T&gt;(nint, int, FreeNativeDelegate, bool)</h4>
+  <div class="markdown level1 summary"><p>Frees an unmanaged array and performs cleanup for each value. Optionally can free an array of pointers. This can be used on any type that can be
+marshaled into unmanaged memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FreeNativeArray&lt;T&gt;(nint nativeArray, int length, FreeNativeDelegate action, bool arrayOfPointers = false) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">nativeArray</span></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Number of elements to free</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="SharpAssimp.FreeNativeDelegate.html">FreeNativeDelegate</a></td>
+        <td><span class="parametername">action</span></td>
+        <td><p>Delegate that performs the necessary cleanup</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">arrayOfPointers</span></td>
+        <td><p>True if the pointer is an array of pointers, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_FromNativeArray__1_System_IntPtr_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.FromNativeArray%60%601(System.IntPtr%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L218">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_FromNativeArray_" data-uid="SharpAssimp.MemoryHelper.FromNativeArray*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_FromNativeArray__1_System_IntPtr_System_Int32_" data-uid="SharpAssimp.MemoryHelper.FromNativeArray``1(System.IntPtr,System.Int32)">FromNativeArray&lt;T&gt;(nint, int)</h4>
+  <div class="markdown level1 summary"><p>Marshals an array of blittable structs from a c-style unmanaged array (void*). This should not be used on non-blittable types
+that require marshaling by the runtime (e.g. has MarshalAs attributes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T[] FromNativeArray&lt;T&gt;(nint nativeArray, int length) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">nativeArray</span></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Number of elements to read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>Managed array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_FromNativeArray__2_System_IntPtr_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.FromNativeArray%60%602(System.IntPtr%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L130">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_FromNativeArray_" data-uid="SharpAssimp.MemoryHelper.FromNativeArray*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_FromNativeArray__2_System_IntPtr_System_Int32_System_Boolean_" data-uid="SharpAssimp.MemoryHelper.FromNativeArray``2(System.IntPtr,System.Int32,System.Boolean)">FromNativeArray&lt;Managed, Native&gt;(nint, int, bool)</h4>
+  <div class="markdown level1 summary"><p>Marshals an array of managed values from a c-style unmanaged array (void*). This also can optionally marshal from
+an unmanaged array of pointers (void**).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Managed[] FromNativeArray&lt;Managed, Native&gt;(nint nativeArray, int length, bool arrayOfPointers = false) where Managed : class, IMarshalable&lt;Managed, Native&gt;, new() where Native : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">nativeArray</span></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Number of elements to marshal</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">arrayOfPointers</span></td>
+        <td><p>True if the pointer is an array of pointers, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Managed[]</td>
+        <td><p>Marshaled managed values</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Managed</span></td>
+        <td><p>Managed type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Native</span></td>
+        <td><p>Native type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_FromNativePointer__2_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.FromNativePointer%60%602(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L304">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_FromNativePointer_" data-uid="SharpAssimp.MemoryHelper.FromNativePointer*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_FromNativePointer__2_System_IntPtr_" data-uid="SharpAssimp.MemoryHelper.FromNativePointer``2(System.IntPtr)">FromNativePointer&lt;Managed, Native&gt;(nint)</h4>
+  <div class="markdown level1 summary"><p>Marshals a managed value from unmanaged memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Managed? FromNativePointer&lt;Managed, Native&gt;(nint ptr) where Managed : class, IMarshalable&lt;Managed, Native&gt;, new() where Native : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Managed</span></td>
+        <td><p>The marshaled managed value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Managed</span></td>
+        <td><p>Managed type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Native</span></td>
+        <td><p>Unmanaged type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_MarshalPointer__1___0__System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.MarshalPointer%60%601(%60%600%40%2CSystem.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L387">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_MarshalPointer_" data-uid="SharpAssimp.MemoryHelper.MarshalPointer*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_MarshalPointer__1___0__System_IntPtr_" data-uid="SharpAssimp.MemoryHelper.MarshalPointer``1(``0@,System.IntPtr)">MarshalPointer&lt;T&gt;(in T, nint)</h4>
+  <div class="markdown level1 summary"><p>Convienence method for marshaling a structure to a pointer. Only use if the type is not blittable, otherwise
+use the write methods for blittable types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MarshalPointer&lt;T&gt;(in T value, nint ptr) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Struct to marshal</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer to unmanaged chunk of memory which must be allocated prior to this call</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_MarshalSizeOf__1.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.MarshalSizeOf%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L407">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_MarshalSizeOf_" data-uid="SharpAssimp.MemoryHelper.MarshalSizeOf*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_MarshalSizeOf__1" data-uid="SharpAssimp.MemoryHelper.MarshalSizeOf``1">MarshalSizeOf&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Computes the size of the struct type using Marshal SizeOf. Only use if the type is not blittable, thus requiring marshaling by the runtime,
+(e.g. has MarshalAs attributes), otherwise use the SizeOf methods for blittable types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int MarshalSizeOf&lt;T&gt;() where T : struct</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Size of the struct in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_MarshalStructure__1_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.MarshalStructure%60%601(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L365">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_MarshalStructure_" data-uid="SharpAssimp.MemoryHelper.MarshalStructure*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_MarshalStructure__1_System_IntPtr_" data-uid="SharpAssimp.MemoryHelper.MarshalStructure``1(System.IntPtr)">MarshalStructure&lt;T&gt;(nint)</h4>
+  <div class="markdown level1 summary"><p>Convienence method for marshaling a pointer to a structure. Only use if the type is not blittable, otherwise
+use the read methods for blittable types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T MarshalStructure&lt;T&gt;(nint ptr) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer to marshal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The marshaled structure</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_MarshalStructure__1_System_IntPtr___0__.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.MarshalStructure%60%601(System.IntPtr%2C%60%600%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L339">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_MarshalStructure_" data-uid="SharpAssimp.MemoryHelper.MarshalStructure*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_MarshalStructure__1_System_IntPtr___0__" data-uid="SharpAssimp.MemoryHelper.MarshalStructure``1(System.IntPtr,``0@)">MarshalStructure&lt;T&gt;(nint, out T)</h4>
+  <div class="markdown level1 summary"><p>Convienence method for marshaling a pointer to a structure. Only use if the type is not blittable, otherwise
+use the read methods for blittable types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void MarshalStructure&lt;T&gt;(nint ptr, out T value) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">ptr</span></td>
+        <td><p>Pointer to marshal</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The marshaled structure</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_ReadStreamFully_System_IO_Stream_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.ReadStreamFully(System.IO.Stream%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L457">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_ReadStreamFully_" data-uid="SharpAssimp.MemoryHelper.ReadStreamFully*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_ReadStreamFully_System_IO_Stream_System_Int32_" data-uid="SharpAssimp.MemoryHelper.ReadStreamFully(System.IO.Stream,System.Int32)">ReadStreamFully(Stream, int)</h4>
+  <div class="markdown level1 summary"><p>Reads a stream until the end is reached into a byte array. Based on
+<a href="http://www.yoda.arachsys.com/csharp/readbinary.html">Jon Skeet's implementation</a>.
+It is up to the caller to dispose of the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ReadStreamFully(Stream stream, int initialLength)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">stream</span></td>
+        <td><p>Stream to read all bytes from</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">initialLength</span></td>
+        <td><p>Initial buffer length, default is 32K</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>The byte array containing all the bytes from the stream</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_Read__1_System_IntPtr_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.Read%60%601(System.IntPtr)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L572">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_Read_" data-uid="SharpAssimp.MemoryHelper.Read*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_Read__1_System_IntPtr_" data-uid="SharpAssimp.MemoryHelper.Read``1(System.IntPtr)">Read&lt;T&gt;(nint)</h4>
+  <div class="markdown level1 summary"><p>Reads a single element from the memory location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Read&lt;T&gt;(nint pSrc) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Pointer to memory location</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The read value</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_Read__1_System_IntPtr___0__.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.Read%60%601(System.IntPtr%2C%60%600%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L583">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_Read_" data-uid="SharpAssimp.MemoryHelper.Read*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_Read__1_System_IntPtr___0__" data-uid="SharpAssimp.MemoryHelper.Read``1(System.IntPtr,``0@)">Read&lt;T&gt;(nint, out T)</h4>
+  <div class="markdown level1 summary"><p>Reads a single element from the memory location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Read&lt;T&gt;(nint pSrc, out T value) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Pointer to memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The read value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_Read__1_System_IntPtr___0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.Read%60%601(System.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L559">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_Read_" data-uid="SharpAssimp.MemoryHelper.Read*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_Read__1_System_IntPtr___0___System_Int32_System_Int32_" data-uid="SharpAssimp.MemoryHelper.Read``1(System.IntPtr,``0[],System.Int32,System.Int32)">Read&lt;T&gt;(nint, T[], int, int)</h4>
+  <div class="markdown level1 summary"><p>Reads data from the memory location into the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Read&lt;T&gt;(nint pSrc, T[] data, int startIndexInArray, int count) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pSrc</span></td>
+        <td><p>Pointer to memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Array to store the copied data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndexInArray</span></td>
+        <td><p>Zero-based element index to start writing data to in the element array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of elements to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_SizeOf__1.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.SizeOf%60%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L513">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_SizeOf_" data-uid="SharpAssimp.MemoryHelper.SizeOf*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_SizeOf__1" data-uid="SharpAssimp.MemoryHelper.SizeOf``1">SizeOf&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Computes the size of the struct type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SizeOf&lt;T&gt;() where T : struct</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Size of the struct in bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_SizeOf__1___0___.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.SizeOf%60%601(%60%600%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L535">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_SizeOf_" data-uid="SharpAssimp.MemoryHelper.SizeOf*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_SizeOf__1___0___" data-uid="SharpAssimp.MemoryHelper.SizeOf``1(``0[])">SizeOf&lt;T&gt;(T[])</h4>
+  <div class="markdown level1 summary"><p>Computes the size of the struct array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int SizeOf&lt;T&gt;(T[] array) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array of structs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>Total size, in bytes, of the array's contents.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_ToNativeArray__1_System_Collections_Generic_List___0__.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.ToNativeArray%60%601(System.Collections.Generic.List%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L198">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_ToNativeArray_" data-uid="SharpAssimp.MemoryHelper.ToNativeArray*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_ToNativeArray__1_System_Collections_Generic_List___0__" data-uid="SharpAssimp.MemoryHelper.ToNativeArray``1(System.Collections.Generic.List{``0})">ToNativeArray&lt;T&gt;(List&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Marshals a list of blittable structs to a c-style unmanaged array (void*). This should not be used on non-blittable types
+that require marshaling by the runtime (e.g. has MarshalAs attributes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint ToNativeArray&lt;T&gt;(List&lt;T&gt; managedArray) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><span class="parametername">managedArray</span></td>
+        <td><p>Managed list of structs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_ToNativeArray__1___0___.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.ToNativeArray%60%601(%60%600%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L179">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_ToNativeArray_" data-uid="SharpAssimp.MemoryHelper.ToNativeArray*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_ToNativeArray__1___0___" data-uid="SharpAssimp.MemoryHelper.ToNativeArray``1(``0[])">ToNativeArray&lt;T&gt;(T[]?)</h4>
+  <div class="markdown level1 summary"><p>Marshals an array of blittable structs to a c-style unmanaged array (void*). This should not be used on non-blittable types
+that require marshaling by the runtime (e.g. has MarshalAs attributes).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint ToNativeArray&lt;T&gt;(T[]? managedArray) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">managedArray</span></td>
+        <td><p>Managed array of structs</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_ToNativeArray__2_System_Collections_Generic_IReadOnlyCollection___0__System_Boolean_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.ToNativeArray%60%602(System.Collections.Generic.IReadOnlyCollection%7B%60%600%7D%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L55">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_ToNativeArray_" data-uid="SharpAssimp.MemoryHelper.ToNativeArray*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_ToNativeArray__2_System_Collections_Generic_IReadOnlyCollection___0__System_Boolean_" data-uid="SharpAssimp.MemoryHelper.ToNativeArray``2(System.Collections.Generic.IReadOnlyCollection{``0},System.Boolean)">ToNativeArray&lt;Managed, Native&gt;(IReadOnlyCollection&lt;Managed&gt;?, bool)</h4>
+  <div class="markdown level1 summary"><p>Marshals an array of managed values to a c-style unmanaged array (void*). This also can optionally marshal to
+an unmanaged array of pointers (void**).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint ToNativeArray&lt;Managed, Native&gt;(IReadOnlyCollection&lt;Managed&gt;? managedColl, bool arrayOfPointers = false) where Managed : class, IMarshalable&lt;Managed, Native&gt;, new() where Native : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;Managed&gt;</td>
+        <td><span class="parametername">managedColl</span></td>
+        <td><p>Collection of managed values</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">arrayOfPointers</span></td>
+        <td><p>True if the pointer is an array of pointers, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Managed</span></td>
+        <td><p>Managed type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Native</span></td>
+        <td><p>Native type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_ToNativePointer__2___0_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.ToNativePointer%60%602(%60%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L269">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_ToNativePointer_" data-uid="SharpAssimp.MemoryHelper.ToNativePointer*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_ToNativePointer__2___0_" data-uid="SharpAssimp.MemoryHelper.ToNativePointer``2(``0)">ToNativePointer&lt;Managed, Native&gt;(Managed)</h4>
+  <div class="markdown level1 summary"><p>Marshals a managed value to unmanaged memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static nint ToNativePointer&lt;Managed, Native&gt;(Managed managedValue) where Managed : class, IMarshalable&lt;Managed, Native&gt;, new() where Native : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Managed</span></td>
+        <td><span class="parametername">managedValue</span></td>
+        <td><p>Managed value to marshal</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><p>Pointer to unmanaged memory</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">Managed</span></td>
+        <td><p>Managed type</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="parametername">Native</span></td>
+        <td><p>Unmanaged type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_Write__1_System_IntPtr_System_Collections_Generic_List___0__System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.Write%60%601(System.IntPtr%2CSystem.Collections.Generic.List%7B%60%600%7D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L611">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_Write_" data-uid="SharpAssimp.MemoryHelper.Write*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_Write__1_System_IntPtr_System_Collections_Generic_List___0__System_Int32_System_Int32_" data-uid="SharpAssimp.MemoryHelper.Write``1(System.IntPtr,System.Collections.Generic.List{``0},System.Int32,System.Int32)">Write&lt;T&gt;(nint, List&lt;T&gt;, int, int)</h4>
+  <div class="markdown level1 summary"><p>Writes data from the list to the memory location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write&lt;T&gt;(nint pDest, List&lt;T&gt; data, int startIndexInArray, int count) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pDest</span></td>
+        <td><p>Pointer to memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>List containing data to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndexInArray</span></td>
+        <td><p>Zero-based element index to start reading data from in the element array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of elements to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_Write__1_System_IntPtr___0__.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.Write%60%601(System.IntPtr%2C%60%600%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L632">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_Write_" data-uid="SharpAssimp.MemoryHelper.Write*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_Write__1_System_IntPtr___0__" data-uid="SharpAssimp.MemoryHelper.Write``1(System.IntPtr,``0@)">Write&lt;T&gt;(nint, in T)</h4>
+  <div class="markdown level1 summary"><p>Writes a single element to the memory location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write&lt;T&gt;(nint pDest, in T data) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pDest</span></td>
+        <td><p>Pointer to memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The value to write</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper_Write__1_System_IntPtr___0___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper.Write%60%601(System.IntPtr%2C%60%600%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L596">View Source</a>
+  </span>
+  <a id="SharpAssimp_MemoryHelper_Write_" data-uid="SharpAssimp.MemoryHelper.Write*"></a>
+  <h4 id="SharpAssimp_MemoryHelper_Write__1_System_IntPtr___0___System_Int32_System_Int32_" data-uid="SharpAssimp.MemoryHelper.Write``1(System.IntPtr,``0[],System.Int32,System.Int32)">Write&lt;T&gt;(nint, T[], int, int)</h4>
+  <div class="markdown level1 summary"><p>Writes data from the array to the memory location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Write&lt;T&gt;(nint pDest, T[] data, int startIndexInArray, int count) where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></td>
+        <td><span class="parametername">pDest</span></td>
+        <td><p>Pointer to memory location</p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>Array containing data to write</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">startIndexInArray</span></td>
+        <td><p>Zero-based element index to start reading data from in the element array.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td><p>Number of elements to copy</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Struct type</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_MemoryHelper.md&amp;value=---%0Auid%3A%20SharpAssimp.MemoryHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/MemoryHelper.cs/#L39" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright Alan McGovern, Ben Motmans, Lucas Ontivero, J&eacute;r&eacute;my Ansel (c) 2006-2024
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

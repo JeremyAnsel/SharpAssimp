@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AiConfigs </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AiConfigs ">
+    
+    <meta name="description" content="Defines configurable properties for importing models. All properties have default values. Setting config properties are done via the SetProperty* methods in AssimpMethods.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../api/index.html" title="Api Documentation">Api Documentation</a>
+                      </li>
+                      <li>
+                          <a href="https://github.com/JeremyAnsel/SharpAssimp" title="Source Code">Source Code</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.html" title="SharpAssimp" class="">SharpAssimp</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Animation.html" title="Animation" class="">Animation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AnimationBehaviour.html" title="AnimationBehaviour" class="">AnimationBehaviour</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AnimationInterpolation.html" title="AnimationInterpolation" class="">AnimationInterpolation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AssimpContext.html" title="AssimpContext" class="">AssimpContext</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.AssimpException.html" title="AssimpException" class="">AssimpException</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.BlendMode.html" title="BlendMode" class="">BlendMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Bone.html" title="Bone" class="">Bone</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.BoundingBox.html" title="BoundingBox" class="">BoundingBox</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Camera.html" title="Camera" class="">Camera</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.CompileFlags.html" title="CompileFlags" class="">CompileFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ConsoleLogStream.html" title="ConsoleLogStream" class="">ConsoleLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.DefaultLogStream.html" title="DefaultLogStream" class="">DefaultLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.EmbeddedTexture.html" title="EmbeddedTexture" class="">EmbeddedTexture</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExcludeComponent.html" title="ExcludeComponent" class="">ExcludeComponent</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExportDataBlob.html" title="ExportDataBlob" class="">ExportDataBlob</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ExportFormatDescription.html" title="ExportFormatDescription" class="">ExportFormatDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Face.html" title="Face" class="">Face</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FileIOMode.html" title="FileIOMode" class="">FileIOMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FileIOSystem.html" title="FileIOSystem" class="">FileIOSystem</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.FreeNativeDelegate.html" title="FreeNativeDelegate" class="">FreeNativeDelegate</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IMarshalable-2.html" title="IMarshalable&lt;Managed, Native&gt;" class="">IMarshalable&lt;Managed, Native&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.INativeCustomMarshaler.html" title="INativeCustomMarshaler" class="">INativeCustomMarshaler</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IOStream.html" title="IOStream" class="">IOStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.IOSystem.html" title="IOSystem" class="">IOSystem</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ImporterDescription.html" title="ImporterDescription" class="">ImporterDescription</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ImporterFeatureFlags.html" title="ImporterFeatureFlags" class="">ImporterFeatureFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Light.html" title="Light" class="">Light</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LightSourceType.html" title="LightSourceType" class="">LightSourceType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LogStream.html" title="LogStream" class="">LogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.LoggingCallback.html" title="LoggingCallback" class="">LoggingCallback</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.html" title="Material" class="">Material</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.PBRMaterialProperties.html" title="Material.PBRMaterialProperties" class="">Material.PBRMaterialProperties</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Material.ShaderMaterialProperties.html" title="Material.ShaderMaterialProperties" class="">Material.ShaderMaterialProperties</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MaterialProperty.html" title="MaterialProperty" class="">MaterialProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Matrix3x3.html" title="Matrix3x3" class="">Matrix3x3</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MemoryHelper.html" title="MemoryHelper" class="">MemoryHelper</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Mesh.html" title="Mesh" class="">Mesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshAnimationAttachment.html" title="MeshAnimationAttachment" class="">MeshAnimationAttachment</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshAnimationChannel.html" title="MeshAnimationChannel" class="">MeshAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshKey.html" title="MeshKey" class="">MeshKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphAnimationChannel.html" title="MeshMorphAnimationChannel" class="">MeshMorphAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphKey.html" title="MeshMorphKey" class="">MeshMorphKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MeshMorphingMethod.html" title="MeshMorphingMethod" class="">MeshMorphingMethod</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.MetaDataType.html" title="MetaDataType" class="">MetaDataType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Metadata.html" title="Metadata" class="">Metadata</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Metadata.Entry.html" title="Metadata.Entry" class="">Metadata.Entry</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NativeCustomMarshalerAttribute.html" title="NativeCustomMarshalerAttribute" class="">NativeCustomMarshalerAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Node.html" title="Node" class="">Node</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NodeAnimationChannel.html" title="NodeAnimationChannel" class="">NodeAnimationChannel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.NodeCollection.html" title="NodeCollection" class="">NodeCollection</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Origin.html" title="Origin" class="">Origin</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PostProcessPreset.html" title="PostProcessPreset" class="">PostProcessPreset</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PostProcessSteps.html" title="PostProcessSteps" class="">PostProcessSteps</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PrimitiveType.html" title="PrimitiveType" class="">PrimitiveType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.PropertyType.html" title="PropertyType" class="">PropertyType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.QuaternionKey.html" title="QuaternionKey" class="">QuaternionKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Ray.html" title="Ray" class="">Ray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ReturnCode.html" title="ReturnCode" class="">ReturnCode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Scene.html" title="Scene" class="">Scene</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.SceneFlags.html" title="SceneFlags" class="">SceneFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.ShadingMode.html" title="ShadingMode" class="">ShadingMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Texel.html" title="Texel" class="">Texel</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureFlags.html" title="TextureFlags" class="">TextureFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureMapping.html" title="TextureMapping" class="">TextureMapping</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureOperation.html" title="TextureOperation" class="">TextureOperation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureSlot.html" title="TextureSlot" class="">TextureSlot</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureType.html" title="TextureType" class="">TextureType</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.TextureWrapMode.html" title="TextureWrapMode" class="">TextureWrapMode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.UVTransform.html" title="UVTransform" class="">UVTransform</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.UVTransformFlags.html" title="UVTransformFlags" class="">UVTransformFlags</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.VectorKey.html" title="VectorKey" class="">VectorKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.VertexWeight.html" title="VertexWeight" class="">VertexWeight</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.Configs.html" title="SharpAssimp.Configs" class="">SharpAssimp.Configs</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ACEvaluateSubdivisionConfig.html" title="ACEvaluateSubdivisionConfig" class="">ACEvaluateSubdivisionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ACSeparateBackfaceCullConfig.html" title="ACSeparateBackfaceCullConfig" class="">ACSeparateBackfaceCullConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ASEReconstructNormalsConfig.html" title="ASEReconstructNormalsConfig" class="">ASEReconstructNormalsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.AnimationAccuracyConfig.html" title="AnimationAccuracyConfig" class="">AnimationAccuracyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.AppScaleConfig.html" title="AppScaleConfig" class="">AppScaleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.BooleanPropertyConfig.html" title="BooleanPropertyConfig" class="">BooleanPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ColladaIgnoreUpDirectionConfig.html" title="ColladaIgnoreUpDirectionConfig" class="">ColladaIgnoreUpDirectionConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ColladaUseColladaNamesConfig.html" title="ColladaUseColladaNamesConfig" class="">ColladaUseColladaNamesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.DeboneAllOrNoneConfig.html" title="DeboneAllOrNoneConfig" class="">DeboneAllOrNoneConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.DeboneThresholdConfig.html" title="DeboneThresholdConfig" class="">DeboneThresholdConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.ExportPointCloudsConfig.html" title="ExportPointCloudsConfig" class="">ExportPointCloudsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXConvertToMetersConfig.html" title="FBXConvertToMetersConfig" class="">FBXConvertToMetersConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAllGeometryLayersConfig.html" title="FBXImportAllGeometryLayersConfig" class="">FBXImportAllGeometryLayersConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAllMaterialsConfig.html" title="FBXImportAllMaterialsConfig" class="">FBXImportAllMaterialsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportAnimationsConfig.html" title="FBXImportAnimationsConfig" class="">FBXImportAnimationsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportCamerasConfig.html" title="FBXImportCamerasConfig" class="">FBXImportCamerasConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportEmbeddedTexturesConfig.html" title="FBXImportEmbeddedTexturesConfig" class="">FBXImportEmbeddedTexturesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportEmbeddedTexturesLegacyNamingConfig.html" title="FBXImportEmbeddedTexturesLegacyNamingConfig" class="">FBXImportEmbeddedTexturesLegacyNamingConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportLightsConfig.html" title="FBXImportLightsConfig" class="">FBXImportLightsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXImportMaterialsConfig.html" title="FBXImportMaterialsConfig" class="">FBXImportMaterialsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXOptimizeEmptyAnimationCurvesConfig.html" title="FBXOptimizeEmptyAnimationCurvesConfig" class="">FBXOptimizeEmptyAnimationCurvesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXPreservePivotsConfig.html" title="FBXPreservePivotsConfig" class="">FBXPreservePivotsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FBXStrictModeConfig.html" title="FBXStrictModeConfig" class="">FBXStrictModeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FavorSpeedConfig.html" title="FavorSpeedConfig" class="">FavorSpeedConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.FloatPropertyConfig.html" title="FloatPropertyConfig" class="">FloatPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.GlobalKeyFrameImportConfig.html" title="GlobalKeyFrameImportConfig" class="">GlobalKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.GlobalScaleConfig.html" title="GlobalScaleConfig" class="">GlobalScaleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCCylindricalTessellationConfig.html" title="IFCCylindricalTessellationConfig" class="">IFCCylindricalTessellationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCSkipSpaceRepresentationsConfig.html" title="IFCSkipSpaceRepresentationsConfig" class="">IFCSkipSpaceRepresentationsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCSmoothingAngleConfig.html" title="IFCSmoothingAngleConfig" class="">IFCSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IFCUseCustomTriangulationConfig.html" title="IFCUseCustomTriangulationConfig" class="">IFCUseCustomTriangulationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IRRAnimationFrameRateConfig.html" title="IRRAnimationFrameRateConfig" class="">IRRAnimationFrameRateConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.html" title="IgnoreTextureCoordinatesConfig" class="">IgnoreTextureCoordinatesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.IntegerPropertyConfig.html" title="IntegerPropertyConfig" class="">IntegerPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.KeepSceneHierarchyConfig.html" title="KeepSceneHierarchyConfig" class="">KeepSceneHierarchyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWOImportOneLayerConfig.html" title="LWOImportOneLayerConfig" class="">LWOImportOneLayerConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWSAnimationEndConfig.html" title="LWSAnimationEndConfig" class="">LWSAnimationEndConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.LWSAnimationStartConfig.html" title="LWSAnimationStartConfig" class="">LWSAnimationStartConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD2KeyFrameImportConfig.html" title="MD2KeyFrameImportConfig" class="">MD2KeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3HandleMultiPartConfig.html" title="MD3HandleMultiPartConfig" class="">MD3HandleMultiPartConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3KeyFrameImportConfig.html" title="MD3KeyFrameImportConfig" class="">MD3KeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3ShaderSourceConfig.html" title="MD3ShaderSourceConfig" class="">MD3ShaderSourceConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD3SkinNameConfig.html" title="MD3SkinNameConfig" class="">MD3SkinNameConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MD5NoAnimationAutoLoadConfig.html" title="MD5NoAnimationAutoLoadConfig" class="">MD5NoAnimationAutoLoadConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MDLColorMapConfig.html" title="MDLColorMapConfig" class="">MDLColorMapConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MDLKeyFrameImportConfig.html" title="MDLKeyFrameImportConfig" class="">MDLKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MaterialExcludeListConfig.html" title="MaterialExcludeListConfig" class="">MaterialExcludeListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MatrixPropertyConfig.html" title="MatrixPropertyConfig" class="">MatrixPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MaxBoneCountConfig.html" title="MaxBoneCountConfig" class="">MaxBoneCountConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeasureTimeConfig.html" title="MeasureTimeConfig" class="">MeasureTimeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeshTriangleLimitConfig.html" title="MeshTriangleLimitConfig" class="">MeshTriangleLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MeshVertexLimitConfig.html" title="MeshVertexLimitConfig" class="">MeshVertexLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.MultithreadingConfig.html" title="MultithreadingConfig" class="">MultithreadingConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NoSkeletonMeshesConfig.html" title="NoSkeletonMeshesConfig" class="">NoSkeletonMeshesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NodeExcludeListConfig.html" title="NodeExcludeListConfig" class="">NodeExcludeListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NormalSmoothingAngleConfig.html" title="NormalSmoothingAngleConfig" class="">NormalSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.NormalizeVertexComponentsConfig.html" title="NormalizeVertexComponentsConfig" class="">NormalizeVertexComponentsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.OgreMaterialFileConfig.html" title="OgreMaterialFileConfig" class="">OgreMaterialFileConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.html" title="OgreTextureTypeFromFilenameConfig" class="">OgreTextureTypeFromFilenameConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.PropertyConfig.html" title="PropertyConfig" class="">PropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveComponentConfig.html" title="RemoveComponentConfig" class="">RemoveComponentConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveDegeneratePrimitivesCheckAreaConfig.html" title="RemoveDegeneratePrimitivesCheckAreaConfig" class="">RemoveDegeneratePrimitivesCheckAreaConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveDegeneratePrimitivesConfig.html" title="RemoveDegeneratePrimitivesConfig" class="">RemoveDegeneratePrimitivesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RemoveEmptyBonesConfig.html" title="RemoveEmptyBonesConfig" class="">RemoveEmptyBonesConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.RootTransformationConfig.html" title="RootTransformationConfig" class="">RootTransformationConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SMDKeyFrameImportConfig.html" title="SMDKeyFrameImportConfig" class="">SMDKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SmdLoadAnimationListConfig.html" title="SmdLoadAnimationListConfig" class="">SmdLoadAnimationListConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.SortByPrimitiveTypeConfig.html" title="SortByPrimitiveTypeConfig" class="">SortByPrimitiveTypeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.StringPropertyConfig.html" title="StringPropertyConfig" class="">StringPropertyConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TangentSmoothingAngleConfig.html" title="TangentSmoothingAngleConfig" class="">TangentSmoothingAngleConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TangentTextureChannelIndexConfig.html" title="TangentTextureChannelIndexConfig" class="">TangentTextureChannelIndexConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TerragenComputeTexCoordsConfig.html" title="TerragenComputeTexCoordsConfig" class="">TerragenComputeTexCoordsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.TransformUVConfig.html" title="TransformUVConfig" class="">TransformUVConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.UnrealHandleFlagsConfig.html" title="UnrealHandleFlagsConfig" class="">UnrealHandleFlagsConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.UnrealKeyFrameImportConfig.html" title="UnrealKeyFrameImportConfig" class="">UnrealKeyFrameImportConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.VertexBoneWeightLimitConfig.html" title="VertexBoneWeightLimitConfig" class="">VertexBoneWeightLimitConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.VertexCacheSizeConfig.html" title="VertexCacheSizeConfig" class="">VertexCacheSizeConfig</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Configs.XFileUseDoublesConfig.html" title="XFileUseDoublesConfig" class="">XFileUseDoublesConfig</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="SharpAssimp.Unmanaged.html" title="SharpAssimp.Unmanaged" class="">SharpAssimp.Unmanaged</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiAnimMesh.html" title="AiAnimMesh" class="">AiAnimMesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiAnimation.html" title="AiAnimation" class="">AiAnimation</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiBone.html" title="AiBone" class="">AiBone</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiCamera.html" title="AiCamera" class="">AiCamera</a>
+                          </li>
+                          <li class="active">
+                            <a href="SharpAssimp.Unmanaged.AiConfigs.html" title="AiConfigs" class="active">AiConfigs</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiDefines.html" title="AiDefines" class="">AiDefines</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiExportDataBlob.html" title="AiExportDataBlob" class="">AiExportDataBlob</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiExportFormatDesc.html" title="AiExportFormatDesc" class="">AiExportFormatDesc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFace.html" title="AiFace" class="">AiFace</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFile.html" title="AiFile" class="">AiFile</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileCloseProc.html" title="AiFileCloseProc" class="">AiFileCloseProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileFlushProc.html" title="AiFileFlushProc" class="">AiFileFlushProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileIO.html" title="AiFileIO" class="">AiFileIO</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileOpenProc.html" title="AiFileOpenProc" class="">AiFileOpenProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileReadProc.html" title="AiFileReadProc" class="">AiFileReadProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileSeek.html" title="AiFileSeek" class="">AiFileSeek</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileTellProc.html" title="AiFileTellProc" class="">AiFileTellProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiFileWriteProc.html" title="AiFileWriteProc" class="">AiFileWriteProc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiImporterDesc.html" title="AiImporterDesc" class="">AiImporterDesc</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLight.html" title="AiLight" class="">AiLight</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLogStream.html" title="AiLogStream" class="">AiLogStream</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiLogStreamCallback.html" title="AiLogStreamCallback" class="">AiLogStreamCallback</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMatKeys.html" title="AiMatKeys" class="">AiMatKeys</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMaterial.html" title="AiMaterial" class="">AiMaterial</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMaterialProperty.html" title="AiMaterialProperty" class="">AiMaterialProperty</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMemoryInfo.html" title="AiMemoryInfo" class="">AiMemoryInfo</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMesh.html" title="AiMesh" class="">AiMesh</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshAnim.html" title="AiMeshAnim" class="">AiMeshAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshColorArray.html" title="AiMeshColorArray" class="">AiMeshColorArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshMorphAnim.html" title="AiMeshMorphAnim" class="">AiMeshMorphAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshMorphKey.html" title="AiMeshMorphKey" class="">AiMeshMorphKey</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshTextureCoordinateArray.html" title="AiMeshTextureCoordinateArray" class="">AiMeshTextureCoordinateArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMeshUVComponentArray.html" title="AiMeshUVComponentArray" class="">AiMeshUVComponentArray</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMetadata.html" title="AiMetadata" class="">AiMetadata</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiMetadataEntry.html" title="AiMetadataEntry" class="">AiMetadataEntry</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiNode.html" title="AiNode" class="">AiNode</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiNodeAnim.html" title="AiNodeAnim" class="">AiNodeAnim</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiScene.html" title="AiScene" class="">AiScene</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiString.html" title="AiString" class="">AiString</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AiTexture.html" title="AiTexture" class="">AiTexture</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.AssimpLibrary.html" title="AssimpLibrary" class="">AssimpLibrary</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.Platform.html" title="Platform" class="">Platform</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedFunctionNameAttribute.html" title="UnmanagedFunctionNameAttribute" class="">UnmanagedFunctionNameAttribute</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedLibrary.html" title="UnmanagedLibrary" class="">UnmanagedLibrary</a>
+                          </li>
+                          <li class="">
+                            <a href="SharpAssimp.Unmanaged.UnmanagedLibraryResolver.html" title="UnmanagedLibraryResolver" class="">UnmanagedLibraryResolver</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="SharpAssimp.Unmanaged.AiConfigs">
+
+
+
+  <h1 id="SharpAssimp_Unmanaged_AiConfigs" data-uid="SharpAssimp.Unmanaged.AiConfigs" class="text-break">Class AiConfigs</h1>
+  <div class="markdown level0 summary"><p>Defines configurable properties for importing models. All properties
+have default values. Setting config properties are done via the SetProperty*
+methods in AssimpMethods.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">AiConfigs</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="SharpAssimp.html">SharpAssimp</a>.<a class="xref" href="SharpAssimp.Unmanaged.html">Unmanaged</a></h6>
+  <h6><strong>Assembly</strong>: SharpAssimp.dll</h6>
+  <h5 id="SharpAssimp_Unmanaged_AiConfigs_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AiConfigs</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_APP_SCALE_KEY.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_APP_SCALE_KEY%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L286">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_APP_SCALE_KEY" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_APP_SCALE_KEY">AI_CONFIG_APP_SCALE_KEY</h4>
+  <div class="markdown level1 summary"><p>Applies application-specific scale to the global scale factor to allow for backwards compatibility.</p>
+<p>Type: Float. Default: 1.0f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_APP_SCALE_KEY = &quot;APP_SCALE_FACTOR&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_EXPORT_POINT_CLOUDS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_EXPORT_POINT_CLOUDS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L623">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_EXPORT_POINT_CLOUDS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_EXPORT_POINT_CLOUDS">AI_CONFIG_EXPORT_POINT_CLOUDS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the export should be able to export point clouds. When this flag is not defined
+the render data has to contain valid faces. Point  clouds are only a collection of vertices which have no spatial
+organization by a face and the validation process will remove them. Enabling this feature will switch off the
+flag and enable the functionality to export pure point clouds.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_EXPORT_POINT_CLOUDS = &quot;EXPORT_POINT_CLOUDS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_EXPORT_XFILE_64BIT.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_EXPORT_XFILE_64BIT%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L614">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_EXPORT_XFILE_64BIT" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_EXPORT_XFILE_64BIT">AI_CONFIG_EXPORT_XFILE_64BIT</h4>
+  <div class="markdown level1 summary"><p>Specifies if the X-file exporter should use 64-bit doubles rather than 32-bit floats.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_EXPORT_XFILE_64BIT = &quot;EXPORT_XFILE_64BIT&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_FAVOUR_SPEED.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_FAVOUR_SPEED%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L234">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_FAVOUR_SPEED" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_FAVOUR_SPEED">AI_CONFIG_FAVOUR_SPEED</h4>
+  <div class="markdown level1 summary"><p>A hint to Assimp to favour speed against import quality. Enabling this option
+may result in faster loading, or it may not. It is just a hint to loaders and post-processing
+steps to use faster code paths if possible. A value not equal to zero stands
+for true.</p>
+<p>Type: integer. Default: 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_FAVOUR_SPEED = &quot;FAVOUR_SPEED&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_FBX_CONVERT_TO_M.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_FBX_CONVERT_TO_M%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L591">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_FBX_CONVERT_TO_M" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_FBX_CONVERT_TO_M">AI_CONFIG_FBX_CONVERT_TO_M</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the importer shall convert the unit from centimeter (cm) to meter (m).</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_FBX_CONVERT_TO_M = &quot;AI_CONFIG_FBX_CONVERT_TO_M&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L280">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY">AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_GlobalScale">GlobalScale</a> step to scale the entire scene by a certain amount. Some importers provide a mechanism to define a scaling unit for the model,
+which this processing step can utilize.</p>
+<p>Type: Float. Default: 1.0f.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_GLOBAL_SCALE_FACTOR_KEY = &quot;GLOBAL_SCALE_FACTOR&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_GLOB_MEASURE_TIME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_GLOB_MEASURE_TIME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L39">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_GLOB_MEASURE_TIME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_GLOB_MEASURE_TIME">AI_CONFIG_GLOB_MEASURE_TIME</h4>
+  <div class="markdown level1 summary"><p>Enables time measurements. If enabled the time needed for each
+part of the loading process is timed and logged.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_GLOB_MEASURE_TIME = &quot;GLOB_MEASURE_TIME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_GLOB_MULTITHREADING.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_GLOB_MULTITHREADING%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L49">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_GLOB_MULTITHREADING" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_GLOB_MULTITHREADING">AI_CONFIG_GLOB_MULTITHREADING</h4>
+  <div class="markdown level1 summary"><p>Sets Assimp's multithreading policy. This is ignored if Assimp is
+built without boost.thread support. Possible values are: -1 to
+let Assimp decide, 0 to disable multithreading, and nay number larger than 0
+to force a specific number of threads. This is only a hint and may be
+ignored by Assimp.</p>
+<p>Type: integer. Default: -1</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_GLOB_MULTITHREADING = &quot;GLOB_MULTITHREADING&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L347">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION">AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION</h4>
+  <div class="markdown level1 summary"><p>Configures whether the AC loader evaluates subdivision surfaces (indicated by the presence
+of the 'subdiv' attribute in the file). By default, Assimp performs
+the subdivision using the standard Catmull-Clark algorithm.</p>
+<p>Type: bool. Default: true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_AC_EVAL_SUBDIVISION = &quot;IMPORT_AC_EVAL_SUBDIVISION&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L339">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL">AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL</h4>
+  <div class="markdown level1 summary"><p>Configures the AC loader to collect all surfaces which have the &quot;Backface cull&quot; flag set in separate
+meshes.</p>
+<p>Type: bool. Default: true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_AC_SEPARATE_BFCULL = &quot;IMPORT_AC_SEPARATE_BFCULL&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L370">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS">AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS</h4>
+  <div class="markdown level1 summary"><p>Configures the ASE loader to always reconstruct normal vectors basing on the smoothing groups
+loaded from the file. Some ASE files carry invalid normals, others don't.</p>
+<p>Type: bool. Default: true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_ASE_RECONSTRUCT_NORMALS = &quot;IMPORT_ASE_RECONSTRUCT_NORMALS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L506">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION">AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the collada loader will ignore the up direction.</p>
+<p>Type: Bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_COLLADA_IGNORE_UP_DIRECTION = &quot;IMPORT_COLLADA_IGNORE_UP_DIRECTION&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L514">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES">AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the Collada loader should use Collada names as node names.
+If this property is set to true, the Collada names will be used as the
+node name. The default is to use the id tag (resp. sid tag, if no id tag is present) instead.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_COLLADA_USE_COLLADA_NAMES = &quot;IMPORT_COLLADA_USE_COLLADA_NAMES&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L545">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING">AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the fbx importer will use the legacy embedded texture naming.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING = &quot;AI_CONFIG_IMPORT_FBX_EMBEDDED_TEXTURES_LEGACY_NAMING&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L585">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES">AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the importer will drop empty animation curves or animation curves which match the bind pose
+transformation over their entire defined range.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES = &quot;IMPORT_FBX_OPTIMIZE_EMPTY_ANIMATION_CURVES&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L578">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS">AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will preserve pivot points for transformations (as extra nodes). If set to false, pivots
+and offsets will be evaluated whenever possible.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_PRESERVE_PIVOTS = &quot;IMPORT_FBX_PRESERVE_PIVOTS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L520">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS">AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will merge all geometry layers present in the source file or take only the first.</p>
+<p>Type: bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS = &quot;IMPORT_FBX_READ_ALL_GEOMETRY_LAYERS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L527">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS">AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will read all materials present in the source file or take only the referenced materials, if the importer
+will read materials, otherwise this has no effect.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_ALL_MATERIALS = &quot;IMPORT_FBX_READ_ALL_MATERIALS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L563">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS">AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will read animations.</p>
+<p>Type: Bool. default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_ANIMATIONS = &quot;IMPORT_FBX_READ_ANIMATIONS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_CAMERAS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_CAMERAS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L551">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_CAMERAS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_CAMERAS">AI_CONFIG_IMPORT_FBX_READ_CAMERAS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will read cameras.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_CAMERAS = &quot;IMPORT_FBX_READ_CAMERAS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_LIGHTS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_LIGHTS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L557">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_LIGHTS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_LIGHTS">AI_CONFIG_IMPORT_FBX_READ_LIGHTS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will read light sources.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_LIGHTS = &quot;IMPORT_FBX_READ_LIGHTS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_MATERIALS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_MATERIALS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L533">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_MATERIALS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_MATERIALS">AI_CONFIG_IMPORT_FBX_READ_MATERIALS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will read materials.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_MATERIALS = &quot;IMPORT_FBX_READ_MATERIALS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_TEXTURES.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_TEXTURES%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L539">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_READ_TEXTURES" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_READ_TEXTURES">AI_CONFIG_IMPORT_FBX_READ_TEXTURES</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will read embedded textures.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_READ_TEXTURES = &quot;IMPORT_FBX_READ_TEXTURES&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_STRICT_MODE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_STRICT_MODE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L571">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_FBX_STRICT_MODE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_FBX_STRICT_MODE">AI_CONFIG_IMPORT_FBX_STRICT_MODE</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the FBX importer will act in strict mode in which only the FBX 2013
+format is supported and any other sub formats are rejected. FBX 2013 is the primary target for the importer, so this
+format is best supported and well-tested.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_FBX_STRICT_MODE = &quot;IMPORT_FBX_STRICT_MODE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_GLOBAL_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L302">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>Sets the vertex animation keyframe to be imported. Assimp does not support
+vertex keyframes (only bone animation is supported). The libary reads only one frame of models
+with vertex animations. By default this is the first frame.</p>
+<p>The default value is 0. This option applies to all importers. However, it is
+also possible to override the global setting for a specific loader. You can use the
+AI_CONFIG_IMPORT_XXX_KEYFRAME options where XXX is a placeholder for the file format which
+you want to override the global setting.</p>
+<p>Type: integer. Default: 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_GLOBAL_KEYFRAME = &quot;IMPORT_GLOBAL_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L488">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION">AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the IFC loader will use its own, custom triangulation algorithm to triangulate wall and floor meshes. If this is set to false,
+walls will be either triangulated by the post process triangulation or will be passed through as huge polygons with faked holes (e.g. holes that are connected
+with the outer boundary using a dummy edge). It is highly recommended to leave this property set to true as the default post process has some known
+issues with these kind of polygons.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_IFC_CUSTOM_TRIANGULATION = &quot;IMPORT_IFC_CUSTOM_TRIANGULATION&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L500">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION">AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION</h4>
+  <div class="markdown level1 summary"><p>Specifies the tessellation for IFC cylindrical shapes. E.g. the number of segments used to approximate a circle. Accepted range of values is between [3, 180].</p>
+<p>Type: Integer. Default: 32</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_IFC_CYLINDRICAL_TESSELLATION = &quot;IMPORT_IFC_CYLINDRICAL_TESSELLATION&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L479">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS">AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the IFC loader skips over IfcSpace elements. IfcSpace elements (and their geometric representations) are used to represent free space in a building story.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS = &quot;IMPORT_IFC_SKIP_SPACE_REPRESENTATIONS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L494">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE">AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE</h4>
+  <div class="markdown level1 summary"><p>Specifies the tessellation conic angle for IFC smoothing curves. Accepted range of values is between [5, 120]</p>
+<p>Type: Float. Default: 10.0f</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_IFC_SMOOTHING_ANGLE = &quot;IMPORT_IFC_SMOOTHING_ANGLE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IRR_ANIM_FPS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IRR_ANIM_FPS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L449">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_IRR_ANIM_FPS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_IRR_ANIM_FPS">AI_CONFIG_IMPORT_IRR_ANIM_FPS</h4>
+  <div class="markdown level1 summary"><p>Defines the output frame rate of the IRR loader.</p>
+<p>IRR animations are difficult to convert for Assimp and there will always be
+a loss of quality. This setting defines how many keys per second are returned by the converter.</p>
+<p>Type: integer. Default: 100</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_IRR_ANIM_FPS = &quot;IMPORT_IRR_ANIM_FPS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L404">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY">AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY</h4>
+  <div class="markdown level1 summary"><p>Configures the LWO loader to load just one layer from the model.</p>
+<p>LWO files consist of layers and in some cases it could be useful to load only one of them.
+This property can be either a string - which specifies the name of the layer - or an integer - the index
+of the layer. If the property is not set then the whole LWO model is loaded. Loading fails
+if the requested layer is not vailable. The layer index is zero-based and the layer name may not be empty</p>
+<p>Type: bool. Default: false (All layers are loaded)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_LWO_ONE_LAYER_ONLY = &quot;IMPORT_LWO_ONE_LAYER_ONLY&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_LWS_ANIM_END.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_LWS_ANIM_END%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L441">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_LWS_ANIM_END" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_LWS_ANIM_END">AI_CONFIG_IMPORT_LWS_ANIM_END</h4>
+  <div class="markdown level1 summary"><p>Defines the ending of the time range for which the LWS loader evaluates animations and computes
+AiNodeAnim's.</p>
+<p>Assimp provides full conversion of Lightwave's envelope system, including pre and post
+conditions. The loader computes linearly subsampled animation channels with the frame rate
+given in the LWS file. This property defines the end time.</p>
+<p>Animation channels are only generated if a node has at least one envelope with more than one key
+assigned. This property is given in frames where '0' is the first. By default,
+if this property is not set, the importer takes the animation end from the input LWS
+file.</p>
+<p>Type: integer. Default: taken from file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_LWS_ANIM_END = &quot;IMPORT_LWS_ANIM_END&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_LWS_ANIM_START.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_LWS_ANIM_START%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L427">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_LWS_ANIM_START" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_LWS_ANIM_START">AI_CONFIG_IMPORT_LWS_ANIM_START</h4>
+  <div class="markdown level1 summary"><p>Defines the beginning of the time range for which the LWS loader evaluates animations and computes
+AiNodeAnim's.</p>
+<p>Assimp provides full conversion of Lightwave's envelope system, including pre and post
+conditions. The loader computes linearly subsampled animation channels with the frame rate
+given in the LWS file. This property defines the start time.</p>
+<p>Animation channels are only generated if a node has at least one envelope with more than one key
+assigned. This property is given in frames where '0' is the first. By default,
+if this property is not set, the importer takes the animation start from the input LWS
+file ('FirstFrame' line)</p>
+<p>Type: integer. Default: taken from file</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_LWS_ANIM_START = &quot;IMPORT_LWS_ANIM_START&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD2_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD2_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L312">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD2_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD2_KEYFRAME">AI_CONFIG_IMPORT_MD2_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>See the documentation for <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MD2_KEYFRAME = &quot;IMPORT_MD3_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L378">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART">AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART</h4>
+  <div class="markdown level1 summary"><p>Configures the M3D loader to detect and process multi-part Quake player models. These models
+usually consit of three files, lower.md3, upper.md3 and head.md3. If this propery is
+set to true, Assimp will try to load and combine all three files if one of them is loaded.</p>
+<p>Type: bool. Default: true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MD3_HANDLE_MULTIPART = &quot;IMPORT_MD3_HANDLE_MULTIPART&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L307">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_KEYFRAME">AI_CONFIG_IMPORT_MD3_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>See the documentation for <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MD3_KEYFRAME = &quot;IMPORT_MD3_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_SHADER_SRC.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_SHADER_SRC%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L394">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_SHADER_SRC" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_SHADER_SRC">AI_CONFIG_IMPORT_MD3_SHADER_SRC</h4>
+  <div class="markdown level1 summary"><p>Specifies the Quake 3 shader file to be used for a particular MD3 file. This can be a full path or
+relative to where all MD3 shaders reside.</p>
+<p>Type: string. Default: ""</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MD3_SHADER_SRC = &quot;IMPORT_MD3_SHADER_SRC&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_SKIN_NAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_SKIN_NAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L387">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD3_SKIN_NAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD3_SKIN_NAME">AI_CONFIG_IMPORT_MD3_SKIN_NAME</h4>
+  <div class="markdown level1 summary"><p>Tells the MD3 loader which skin files to load. When loading MD3 files, Assimp checks
+whether a file named &quot;md3_file_name&quot;_&quot;skin_name&quot;.skin exists. These files are used by
+Quake III to be able to assign different skins (e.g. red and blue team) to models. 'default', 'red', 'blue'
+are typical skin names.</p>
+<p>Type: string. Default: "default"</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MD3_SKIN_NAME = &quot;IMPORT_MD3_SKIN_NAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L413">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD">AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD</h4>
+  <div class="markdown level1 summary"><p>Configures the MD5 loader to not load the MD5ANIM file for a MD5MESH file automatically.</p>
+<p>The default strategy is to look for a file with the same name but with the MD5ANIm extension
+in the same directory. If it is found it is loaded and combined with the MD5MESH file. This configuration
+option can be used to disable this behavior.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MD5_NO_ANIM_AUTOLOAD = &quot;IMPORT_MD5_NO_ANIM_AUTOLOAD&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MDC_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MDC_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L322">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MDC_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MDC_KEYFRAME">AI_CONFIG_IMPORT_MDC_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>See the documentation for <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MDC_KEYFRAME = &quot;IMPORT_MDC_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MDL_COLORMAP.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MDL_COLORMAP%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L87">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MDL_COLORMAP" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MDL_COLORMAP">AI_CONFIG_IMPORT_MDL_COLORMAP</h4>
+  <div class="markdown level1 summary"><p>Sets the colormap(= palette) to be used to decode embedded textures in MDL (Quake or 3DG5) files.
+This must be a valid path to a file. The file is 768 (256 * 3) bytes large and contains
+RGB triplets for each of the 256 palette entries. If the file is not found, a default
+palette (from Quake 1) is used.</p>
+<p>Type: string. Default: "colormap.lmp"</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MDL_COLORMAP = &quot;IMPORT_MDL_COLORMAP&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MDL_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MDL_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L317">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_MDL_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_MDL_KEYFRAME">AI_CONFIG_IMPORT_MDL_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>See the documentation for <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_MDL_KEYFRAME = &quot;IMPORT_MDL_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_NO_SKELETON_MESHES.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_NO_SKELETON_MESHES%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L57">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_NO_SKELETON_MESHES" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_NO_SKELETON_MESHES">AI_CONFIG_IMPORT_NO_SKELETON_MESHES</h4>
+  <div class="markdown level1 summary"><p>Global setting to disable generation of skeleton dummy meshes. These are generated as a visualization aid
+in cases which the input data contains no geometry, but only animation data. So the geometry are visualizing
+the bones.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_NO_SKELETON_MESHES = &quot;IMPORT_NO_SKELETON_MESHES&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L457">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE">AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE</h4>
+  <div class="markdown level1 summary"><p>The Ogre importer will try to load this MaterialFile. Ogre meshes reference with material names, this does not tell Assimp
+where the file is located. Assimp will try to find the source file in the following order: [material-name].material, [mesh-filename-base].material,
+and lastly the material name defined by this config property.</p>
+<p>Type: string. Default: "Scene.Material"</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_OGRE_MATERIAL_FILE = &quot;IMPORT_OGRE_MATERIAL_FILE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L473">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME">AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME</h4>
+  <div class="markdown level1 summary"><p>The Ogre importer will detect the texture usage from the filename. Normally a texture is loaded as a color map, if no target is specified
+in the material file. If this is enabled, then Assimp will try to detect the type from the texture filename postfix:</p>
+<ul><li>Normal Maps: _n, _nrm, _nrml, _normal, _normals, _normalmap</li><li>Specular Maps: _s, _spec, _specular, _specularmap</li><li>Light Maps: _l, _light, _lightmap, _occ, _occlusion</li><li>Displacement Maps: _dis, _displacement</li></ul>
+The matching is case insensitive. Postfix is taken between the last "_" and last ".". The default behavior is to detect type from lower cased
+texture unit name by matching against: normalmap, specularmap, lightmap, and displacementmap. For both cases if no match is found then,
+<a class="xref" href="SharpAssimp.TextureType.html#SharpAssimp_TextureType_Diffuse">Diffuse</a> is used.
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME = &quot;IMPORT_OGRE_TEXTURETYPE_FROM_FILENAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L604">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES">AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the importer removes empty bones or not. Empty bones are often used to define connections for other models (e.g.
+attachment points).</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES = &quot;AI_CONFIG_IMPORT_REMOVE_EMPTY_BONES&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_SMD_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_SMD_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L327">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_SMD_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_SMD_KEYFRAME">AI_CONFIG_IMPORT_SMD_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>See the documentation for <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_SMD_KEYFRAME = &quot;IMPORT_SMD_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L597">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST">AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST</h4>
+  <div class="markdown level1 summary"><p>Specifies whether the importer will load multiple animations.</p>
+<p>Type: Bool. Default: true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_SMD_LOAD_ANIMATION_LIST = &quot;IMPORT_SMD_LOAD_ANIMATION_LIST&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_TER_MAKE_UVS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_TER_MAKE_UVS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L363">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_TER_MAKE_UVS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_TER_MAKE_UVS">AI_CONFIG_IMPORT_TER_MAKE_UVS</h4>
+  <div class="markdown level1 summary"><p>Configures the terragen import plugin to compute UV's for terrains, if
+they are not given. Furthermore, a default texture is assigned.</p>
+<p>UV coordinates for terrains are so simple to compute that you'll usually 
+want to compute them on your own, if you need them. This option is intended for model viewers which
+want to offer an easy way to apply textures to terrains.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_TER_MAKE_UVS = &quot;IMPORT_TER_MAKE_UVS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L353">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS">AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS</h4>
+  <div class="markdown level1 summary"><p>Configures the UNREAL 3D loader to separate faces with different surface flags (e.g. two-sided vs single-sided).</p>
+<p>Type: bool. Default: true</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_UNREAL_HANDLE_FLAGS = &quot;UNREAL_HANDLE_FLAGS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_UNREAL_KEYFRAME.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_UNREAL_KEYFRAME%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L332">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_UNREAL_KEYFRAME" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_IMPORT_UNREAL_KEYFRAME">AI_CONFIG_IMPORT_UNREAL_KEYFRAME</h4>
+  <div class="markdown level1 summary"><p>See the documentation for <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_IMPORT_GLOBAL_KEYFRAME">AI_CONFIG_IMPORT_GLOBAL_KEYFRAME</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_IMPORT_UNREAL_KEYFRAME = &quot;IMPORT_UNREAL_KEYFRAME&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L69">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE">AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE</h4>
+  <div class="markdown level1 summary"><p>Specifies the maximum angle that may be between two vertex tangents that their tangents
+and bitangents are smoothed during the step to calculate the tangent basis. The angle specified
+is in degrees. The maximum value is 175 degrees.</p>
+<p>Type: float. Default: 45 degrees</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_CT_MAX_SMOOTHING_ANGLE = &quot;PP_CT_MAX_SMOOTHING_ANGLE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L247">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX">AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX</h4>
+  <div class="markdown level1 summary"><p>Source UV channel for tangent space computation. The specified channel must exist or an error will be raised.</p>
+<p>Type: integer. Default: 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_CT_TEXTURE_CHANNEL_INDEX = &quot;PP_CT_TEXTURE_CHANNEL_INDEX&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_DB_ALL_OR_NONE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_DB_ALL_OR_NONE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L259">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_DB_ALL_OR_NONE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_DB_ALL_OR_NONE">AI_CONFIG_PP_DB_ALL_OR_NONE</h4>
+  <div class="markdown level1 summary"><p>Require all bones to qualify for deboning before any are removed.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_DB_ALL_OR_NONE = &quot;PP_DB_ALL_OR_NONE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_DB_THRESHOLD.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_DB_THRESHOLD%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L253">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_DB_THRESHOLD" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_DB_THRESHOLD">AI_CONFIG_PP_DB_THRESHOLD</h4>
+  <div class="markdown level1 summary"><p>Threshold used to determine if a bone is kept or removed during the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_Debone">Debone</a> step.</p>
+<p>Type: float. Default: 1.0f</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_DB_THRESHOLD = &quot;PP_DB_THRESHOLD&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FD_CHECKAREA.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FD_CHECKAREA%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L136">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FD_CHECKAREA" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FD_CHECKAREA">AI_CONFIG_PP_FD_CHECKAREA</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_FindDegenerates">FindDegenerates</a> step
+to check the area of a triangle to be greater than 1e-6. If this is not the case, the triangle will be removed if <a class="xref" href="SharpAssimp.Unmanaged.AiConfigs.html#SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FD_REMOVE">AI_CONFIG_PP_FD_REMOVE</a> is set to true.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_FD_CHECKAREA = &quot;PP_FD_CHECKAREA&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FD_REMOVE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FD_REMOVE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L129">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FD_REMOVE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FD_REMOVE">AI_CONFIG_PP_FD_REMOVE</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_FindDegenerates">FindDegenerates</a> step
+to remove degenerated primitives from the import immediately.</p>
+<p>The default behavior converts degenerated triangles to lines and
+degenerated lines to points.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_FD_REMOVE = &quot;PP_FD_REMOVE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FID_ANIM_ACCURACY.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FID_ANIM_ACCURACY%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L209">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FID_ANIM_ACCURACY" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FID_ANIM_ACCURACY">AI_CONFIG_PP_FID_ANIM_ACCURACY</h4>
+  <div class="markdown level1 summary"><p>Input parameter to the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_FindInvalidData">FindInvalidData</a> step.
+It specifies the floating point accuracy for animation values, specifically the epislon
+during the comparison. The step checks for animation tracks where all frame values are absolutely equal
+and removes them. Two floats are considered equal if the invariant <code>abs(n0-n1) &gt; epislon</code> holds
+true for all vector/quaternion components.</p>
+<p>Type: float. Default: 0.0f (comparisons are exact)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_FID_ANIM_ACCURACY = &quot;PP_FID_ANIM_ACCURACY&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L217">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS">AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS</h4>
+  <div class="markdown level1 summary"><p>Input parameter to the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_FindInvalidData">FindInvalidData</a> step. Set to true to
+ignore texture coordinates. This may be useful if you have to assign different kinds of textures,
+like seasonally variable ones - one for summer and one for winter.</p>
+<p>Type: Bool. Default: false.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_FID_IGNORE_TEXTURECOORDS = &quot;PP_FID_IGNORE_TEXTURECOORDS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L78">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE">AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE</h4>
+  <div class="markdown level1 summary"><p>Specifies the maximum angle that may be between two face normals at the same vertex position that
+their normals will be smoothed together during the calculate smooth normals step. This is commonly
+called the &quot;crease angle&quot;. The angle is specified in degrees. Maximum value is 175 degrees (all vertices
+smoothed).</p>
+<p>Type: float. Default: 175 degrees</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_GSN_MAX_SMOOTHING_ANGLE = &quot;PP_GSN_MAX_SMOOTHING_ANGLE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_ICL_PTCACHE_SIZE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_ICL_PTCACHE_SIZE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L181">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_ICL_PTCACHE_SIZE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_ICL_PTCACHE_SIZE">AI_CONFIG_PP_ICL_PTCACHE_SIZE</h4>
+  <div class="markdown level1 summary"><p>Sets the size of the post-transform vertex cache to optimize vertices for. This is
+for the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_ImproveCacheLocality">ImproveCacheLocality</a> step. The size
+is given in vertices. Of course you can't know how the vertex format will exactly look
+like after the import returns, but you can still guess what your meshes will
+probably have. The default value <em>has</em> resulted in slight performance improvements
+for most Nvidia/AMD cards since 2002.</p>
+<p>Type: integer. Default: AiDefines.PP_ICL_PTCACHE_SIZE</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_ICL_PTCACHE_SIZE = &quot;PP_ICL_PTCACHE_SIZE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_LBW_MAX_WEIGHTS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_LBW_MAX_WEIGHTS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L170">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_LBW_MAX_WEIGHTS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_LBW_MAX_WEIGHTS">AI_CONFIG_PP_LBW_MAX_WEIGHTS</h4>
+  <div class="markdown level1 summary"><p>Sets the maximum number of bones that can affect a single vertex. This is used
+by the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_LimitBoneWeights">LimitBoneWeights</a> step.</p>
+<p>Type: integer. Default: AiDefines.AI_LBW_MAX_WEIGHTS</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_LBW_MAX_WEIGHTS = &quot;PP_LBW_MAX_WEIGHTS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_OG_EXCLUDE_LIST.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_OG_EXCLUDE_LIST%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L147">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_OG_EXCLUDE_LIST" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_OG_EXCLUDE_LIST">AI_CONFIG_PP_OG_EXCLUDE_LIST</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_OptimizeGraph">OptimizeGraph</a> step
+to preserve nodes matching a name in a given list. This is a list of 1 to n strings, whitespace ' ' serves as a delimter character.
+Identifiers containing whitespaces must be enclosed in <em>single</em> quotation marks. Carriage returns
+and tabs are treated as white space.</p>
+<p>If a node matches one of these names, it will not be modified or removed by the
+postprocessing step.</p>
+<p>Type: string. Default: ""</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_OG_EXCLUDE_LIST = &quot;PP_OG_EXCLUDE_LIST&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L266">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION">AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_PreTransformVertices">PreTransformVertices</a> step to use a user defined matrix as the scene root node
+transformation before transforming vertices.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_PTV_ADD_ROOT_TRANSFORMATION = &quot;PP_PTV_ADD_ROOT_TRANSFORMATION&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_KEEP_HIERARCHY.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_KEEP_HIERARCHY%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L110">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_KEEP_HIERARCHY" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_KEEP_HIERARCHY">AI_CONFIG_PP_PTV_KEEP_HIERARCHY</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_PreTransformVertices">PreTransformVertices</a> step
+to keep the scene hierarchy. Meshes are moved to worldspace, but no optimization
+is performed where meshes with the same materials are not joined.</p>
+<p>This option could be of used if you have a scene hierarchy that contains
+important additional information which you intend to parse.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_PTV_KEEP_HIERARCHY = &quot;PP_PTV_KEEP_HIERARCHY&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_NORMALIZE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_NORMALIZE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L120">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_NORMALIZE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_NORMALIZE">AI_CONFIG_PP_PTV_NORMALIZE</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_PreTransformVertices">PreTransformVertices</a> step
+to normalize all vertex components into the -1...1 range. That is, a bounding
+box for the whole scene is computed where the maximum component is taken
+and all meshes are scaled uniformly. This is useful if you don't know the spatial dimension
+of the input data.</p>
+<p>Type: bool. Default: false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_PTV_NORMALIZE = &quot;PP_PTV_NORMALIZE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L273">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION">AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_PreTransformVertices">PreTransformVertices</a> step to use a user defined matrix as the scene root node transformation
+before transforming vertices.</p>
+<p>Type: Matrix4x4. Default: Identity Matrix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_PTV_ROOT_TRANSFORMATION = &quot;PP_PTV_ROOT_TRANSFORMATION&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_RRM_EXCLUDE_LIST.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_RRM_EXCLUDE_LIST%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L100">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_RRM_EXCLUDE_LIST" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_RRM_EXCLUDE_LIST">AI_CONFIG_PP_RRM_EXCLUDE_LIST</h4>
+  <div class="markdown level1 summary"><p>Configures the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_RemoveRedundantMaterials">RemoveRedundantMaterials</a> step to
+keep materials matching a name in a given list. This is a list of
+1 to n strings where whitespace ' ' serves as a delimiter character. Identifiers
+containing whitespaces must be enclosed in <em>single</em> quotation marks. Tabs or
+carriage returns are treated as whitespace.</p>
+<p>If a material matches one of these names, it will not be modified
+or removed by the post processing step nor will other materials be replaced
+by a reference to it.</p>
+<p>Default: string. Default: ""</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_RRM_EXCLUDE_LIST = &quot;PP_RRM_EXCLUDE_LIST&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_RVC_FLAGS.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_RVC_FLAGS%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L190">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_RVC_FLAGS" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_RVC_FLAGS">AI_CONFIG_PP_RVC_FLAGS</h4>
+  <div class="markdown level1 summary"><p>Input parameter to the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_RemoveComponent">RemoveComponent</a> step.
+It specifies the parts of the data structure to be removed.</p>
+<p>This is a bitwise combination of the <a class="xref" href="SharpAssimp.ExcludeComponent.html">ExcludeComponent</a> flag. If no valid mesh is remaining after
+the step is executed, the import FAILS.</p>
+<p>Type: integer. Default: 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_RVC_FLAGS = &quot;PP_RVC_FLAGS&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SBBC_MAX_BONES.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SBBC_MAX_BONES%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L241">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SBBC_MAX_BONES" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SBBC_MAX_BONES">AI_CONFIG_PP_SBBC_MAX_BONES</h4>
+  <div class="markdown level1 summary"><p>Maximum bone cone per mesh for the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_SplitByBoneCount">SplitByBoneCount</a> step. Meshes
+are split until the max number of bones is reached.</p>
+<p>Type: integer. Default: 60</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_SBBC_MAX_BONES = &quot;PP_SBBC_MAX_BONES&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SBP_REMOVE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SBP_REMOVE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L199">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SBP_REMOVE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SBP_REMOVE">AI_CONFIG_PP_SBP_REMOVE</h4>
+  <div class="markdown level1 summary"><p>Input parameter to the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_SortByPrimitiveType">SortByPrimitiveType</a> step.
+It specifies which primitive types are to be removed by the step.</p>
+<p>This is a bitwise combination of the <a class="xref" href="SharpAssimp.PrimitiveType.html">PrimitiveType</a> flag.
+Specifying ALL types is illegal.</p>
+<p>Type: integer. Default: 0</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_SBP_REMOVE = &quot;PP_SBP_REMOVE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SLM_TRIANGLE_LIMIT.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SLM_TRIANGLE_LIMIT%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L155">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SLM_TRIANGLE_LIMIT" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SLM_TRIANGLE_LIMIT">AI_CONFIG_PP_SLM_TRIANGLE_LIMIT</h4>
+  <div class="markdown level1 summary"><p>Sets the maximum number of triangles a mesh can contain. This is used by the
+<a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_SplitLargeMeshes">SplitLargeMeshes</a> step to determine
+whether a mesh must be split or not.</p>
+<p>Type: int. Default: AiDefines.AI_SLM_DEFAULT_MAX_TRIANGLES</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_SLM_TRIANGLE_LIMIT = &quot;PP_SLM_TRIANGLE_LIMIT&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SLM_VERTEX_LIMIT.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SLM_VERTEX_LIMIT%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L163">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_SLM_VERTEX_LIMIT" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_SLM_VERTEX_LIMIT">AI_CONFIG_PP_SLM_VERTEX_LIMIT</h4>
+  <div class="markdown level1 summary"><p>Sets the maximum number of vertices in a mesh. This is used by the
+<a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_SplitLargeMeshes">SplitLargeMeshes</a> step to determine
+whether a mesh must be split or not.</p>
+<p>Type: integer. Default: AiDefines.AI_SLM_DEFAULT_MAX_VERTICES</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_SLM_VERTEX_LIMIT = &quot;PP_SLM_VERTEX_LIMIT&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_TUV_EVALUATE.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_TUV_EVALUATE%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L225">View Source</a>
+  </span>
+  <h4 id="SharpAssimp_Unmanaged_AiConfigs_AI_CONFIG_PP_TUV_EVALUATE" data-uid="SharpAssimp.Unmanaged.AiConfigs.AI_CONFIG_PP_TUV_EVALUATE">AI_CONFIG_PP_TUV_EVALUATE</h4>
+  <div class="markdown level1 summary"><p>Input parameter to the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_TransformUVCoords">TransformUVCoords</a> step.
+It specifies which UV transformations are to be evaluated.</p>
+<p>This is bitwise combination of the <a class="xref" href="SharpAssimp.UVTransformFlags.html">UVTransformFlags</a> flag.</p>
+<p>Type: integer. Default: AiDefines.AI_UV_TRAFO_ALL (All combinations)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string AI_CONFIG_PP_TUV_EVALUATE = &quot;PP_TUV_EVALUATE&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/JeremyAnsel/SharpAssimp/new/main/apiSpec/new?filename=SharpAssimp_Unmanaged_AiConfigs.md&amp;value=---%0Auid%3A%20SharpAssimp.Unmanaged.AiConfigs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/JeremyAnsel/SharpAssimp/blob/main/SharpAssimp/SharpAssimp/Unmanaged/AiConfigs.cs/#L30" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Copyright Alan McGovern, Ben Motmans, Lucas Ontivero, J&eacute;r&eacute;my Ansel (c) 2006-2024
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
