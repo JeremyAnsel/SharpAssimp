@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpAssimp", "SharpAssimp\SharpAssimp.csproj", "{F5060F5E-D388-4367-8381-6AD73DE24A1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{98426E0F-B807-B916-F73B-2FDE25FA81C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5060F5E-D388-4367-8381-6AD73DE24A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5060F5E-D388-4367-8381-6AD73DE24A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5060F5E-D388-4367-8381-6AD73DE24A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5060F5E-D388-4367-8381-6AD73DE24A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98426E0F-B807-B916-F73B-2FDE25FA81C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98426E0F-B807-B916-F73B-2FDE25FA81C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98426E0F-B807-B916-F73B-2FDE25FA81C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98426E0F-B807-B916-F73B-2FDE25FA81C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C29F9AC1-F36B-4B63-B36B-8301CDA1CB18}
+	EndGlobalSection
+EndGlobal
