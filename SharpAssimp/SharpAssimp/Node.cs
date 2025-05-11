@@ -125,7 +125,7 @@ namespace SharpAssimp
         /// </summary>
         /// <param name="name">Name of the node</param>
         /// <param name="parent">Parent of the node</param>
-        public Node(string name, Node parent)
+        public Node(string name, Node? parent)
             : this()
         {
             m_name = name;
