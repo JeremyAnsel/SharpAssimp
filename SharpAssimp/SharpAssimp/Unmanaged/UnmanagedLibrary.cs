@@ -332,7 +332,7 @@ namespace SharpAssimp.Unmanaged
         private static partial class NativeMethods
         {
 #if NET8_0_OR_GREATER
-            [LibraryImport("kernel32.dll", EntryPoint = "LoadLibrary", SetLastError = true, StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(System.Runtime.InteropServices.Marshalling.AnsiStringMarshaller))]
+            [LibraryImport("kernel32.dll", EntryPoint = "LoadLibraryW", SetLastError = true, StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(System.Runtime.InteropServices.Marshalling.Utf16StringMarshaller))]
             public static partial IntPtr WinNativeLoadLibrary(string fileName);
 
             [LibraryImport("api-ms-win-core-libraryloader-l2-1-0.dll", EntryPoint = "LoadPackagedLibrary", SetLastError = true)]
@@ -344,7 +344,7 @@ namespace SharpAssimp.Unmanaged
             [LibraryImport("libc.so.6", EntryPoint = "dlerror")]
             public static partial IntPtr libc6_dlerror();
 #else
-            [DllImport("kernel32.dll", CharSet = CharSet.Ansi, BestFitMapping = false, SetLastError = true, EntryPoint = "LoadLibrary")]
+            [DllImport("kernel32.dll", CharSet = CharSet.Unicode, BestFitMapping = false, SetLastError = true, EntryPoint = "LoadLibraryW")]
             public static extern IntPtr WinNativeLoadLibrary(string fileName);
 
             [DllImport("api-ms-win-core-libraryloader-l2-1-0.dll", SetLastError = true, EntryPoint = "LoadPackagedLibrary")]

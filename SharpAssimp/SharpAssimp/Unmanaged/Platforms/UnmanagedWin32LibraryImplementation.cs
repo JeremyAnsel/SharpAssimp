@@ -24,7 +24,7 @@ using System.Runtime.InteropServices;
 
 namespace SharpAssimp.Unmanaged.Platforms
 {
-    internal sealed class UnmanagedWin32LibraryImplementation : UnmanagedLibraryImplementation
+    internal sealed partial class UnmanagedWin32LibraryImplementation : UnmanagedLibraryImplementation
     {
         public override string DllExtension => ".dll";
 
@@ -84,14 +84,26 @@ namespace SharpAssimp.Unmanaged.Platforms
 
         #region Native Methods
 
-        [DllImport("kernel32.dll", CharSet = CharSet.Ansi, BestFitMapping = false, SetLastError = true, EntryPoint = "LoadLibrary")]
-        private static extern IntPtr WinNativeLoadLibrary(string fileName);
+#if NET8_0_OR_GREATER
+        [LibraryImport("kernel32.dll", EntryPoint = "LoadLibraryW", SetLastError = true, StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(System.Runtime.InteropServices.Marshalling.Utf16StringMarshaller))]
+        private static partial IntPtr WinNativeLoadLibrary(string fileName);
+
+        [LibraryImport("kernel32.dll", SetLastError = true)]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static partial bool FreeLibrary(IntPtr hModule);
+
+        [LibraryImport("kernel32.dll", StringMarshalling = StringMarshalling.Custom, StringMarshallingCustomType = typeof(System.Runtime.InteropServices.Marshalling.AnsiStringMarshaller))]
+        private static partial IntPtr GetProcAddress(IntPtr hModule, string procName);
+#else
+        [DllImport("kernel32.dll", CharSet = CharSet.Unicode, BestFitMapping = false, SetLastError = true, EntryPoint = "LoadLibraryW")]
+        public static extern IntPtr WinNativeLoadLibrary(string fileName);
 
         [DllImport("kernel32.dll", SetLastError = true)]
         private static extern bool FreeLibrary(IntPtr hModule);
 
-        [DllImport("kernel32.dll")]
+        [DllImport("kernel32.dll", CharSet = CharSet.Ansi)]
         private static extern IntPtr GetProcAddress(IntPtr hModule, string procName);
+#endif
 
         #endregion
     }
