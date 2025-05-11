@@ -10771,13 +10771,13 @@ references:
   nameWithType: Node.Node(string)
   nameWithType.vb: Node.New(String)
 - uid: SharpAssimp.Node.#ctor(System.String,SharpAssimp.Node)
-  name: Node(string, Node)
+  name: Node(string, Node?)
   href: api/SharpAssimp.Node.html#SharpAssimp_Node__ctor_System_String_SharpAssimp_Node_
   commentId: M:SharpAssimp.Node.#ctor(System.String,SharpAssimp.Node)
   name.vb: New(String, Node)
-  fullName: SharpAssimp.Node.Node(string, SharpAssimp.Node)
+  fullName: SharpAssimp.Node.Node(string, SharpAssimp.Node?)
   fullName.vb: SharpAssimp.Node.New(String, SharpAssimp.Node)
-  nameWithType: Node.Node(string, Node)
+  nameWithType: Node.Node(string, Node?)
   nameWithType.vb: Node.New(String, Node)
 - uid: SharpAssimp.Node.#ctor*
   name: Node
