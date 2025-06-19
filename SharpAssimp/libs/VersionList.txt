@@ -1,1 +1,1 @@
-Assimp 6.0.1
+Assimp 6.0.2
