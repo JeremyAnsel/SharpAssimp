@@ -833,7 +833,7 @@ issues with these kind of polygons.</p>
       <section><p>Defines the output frame rate of the IRR loader.</p>
 <p>IRR animations are difficult to convert for Assimp and there will always be
 a loss of quality. This setting defines how many keys per second are returned by the converter.</p>
-The default value is 100 frames per second.
+<p>The default value is 100 frames per second.</p>
 </section>
       <h4><a class="xref" href="SharpAssimp.Configs.IgnoreTextureCoordinatesConfig.html">IgnoreTextureCoordinatesConfig</a></h4>
       <section><p>Configuration for the <a class="xref" href="SharpAssimp.PostProcessSteps.html#SharpAssimp_PostProcessSteps_FindInvalidData">FindInvalidData</a> step. Set to true to
@@ -856,7 +856,7 @@ which you intend to parse. The default value is false.</p>
 This property can be either a string - which specifies the name of the layer - or an integer - the index
 of the layer. If the property is not set then the whole LWO model is loaded. Loading fails
 if the requested layer is not vailable. The layer index is zero-based and the layer name may not be empty</p>
-The default value is false (all layers are loaded).
+<p>The default value is false (all layers are loaded).</p>
 </section>
       <h4><a class="xref" href="SharpAssimp.Configs.LWSAnimationEndConfig.html">LWSAnimationEndConfig</a></h4>
       <section><p>Defines the ending of the time range for which the LWS loader evaluates animations and computes
@@ -987,9 +987,9 @@ and lastly the material name defined by this config property. The default value 
       <section><p>The Ogre importer will detect the texture usage from the filename. Normally a texture is loaded as a color map, if no target is specified
 in the material file. If this is enabled, then Assimp will try to detect the type from the texture filename postfix:</p>
 <ul><li>Normal Maps: _n, _nrm, _nrml, _normal, _normals, _normalmap</li><li>Specular Maps: _s, _spec, _specular, _specularmap</li><li>Light Maps: _l, _light, _lightmap, _occ, _occlusion</li><li>Displacement Maps: _dis, _displacement</li></ul>
-The matching is case insensitive. Postfix is taken between the last "_" and last ".". The default behavior is to detect type from lower cased
+<p>The matching is case insensitive. Postfix is taken between the last &quot;_&quot; and last &quot;.&quot;. The default behavior is to detect type from lower cased
 texture unit name by matching against: normalmap, specularmap, lightmap, and displacementmap. For both cases if no match is found then,
-<a class="xref" href="SharpAssimp.TextureType.html#SharpAssimp_TextureType_Diffuse">Diffuse</a> is used. The default value is false.
+<a class="xref" href="SharpAssimp.TextureType.html#SharpAssimp_TextureType_Diffuse">Diffuse</a> is used. The default value is false.</p>
 </section>
       <h4><a class="xref" href="SharpAssimp.Configs.PropertyConfig.html">PropertyConfig</a></h4>
       <section><p>Base property config.</p>

@@ -596,7 +596,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SharpAssimp.Configs.IRRAnimationFrameRateConfig",
-      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IRRAnimationFrameRateConfig.yml\" sourcestartlinenumber=\"1\">Defines the output frame rate of the IRR loader.</p>\n<p>IRR animations are difficult to convert for Assimp and there will always be\na loss of quality. This setting defines how many keys per second are returned by the converter.</p>\nThe default value is 100 frames per second.\n"
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.IRRAnimationFrameRateConfig.yml\" sourcestartlinenumber=\"1\">Defines the output frame rate of the IRR loader.</p>\n<p>IRR animations are difficult to convert for Assimp and there will always be\na loss of quality. This setting defines how many keys per second are returned by the converter.</p>\n<p sourcefile=\"api/SharpAssimp.Configs.IRRAnimationFrameRateConfig.yml\" sourcestartlinenumber=\"6\">The default value is 100 frames per second.</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -652,7 +652,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SharpAssimp.Configs.LWOImportOneLayerConfig",
-      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.LWOImportOneLayerConfig.yml\" sourcestartlinenumber=\"1\">Configures the LWO loader to load just one layer from the model.</p>\n<p>LWO files consist of layers and in some cases it could be useful to load only one of them.\nThis property can be either a string - which specifies the name of the layer - or an integer - the index\nof the layer. If the property is not set then the whole LWO model is loaded. Loading fails\nif the requested layer is not vailable. The layer index is zero-based and the layer name may not be empty</p>\nThe default value is false (all layers are loaded).\n"
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.LWOImportOneLayerConfig.yml\" sourcestartlinenumber=\"1\">Configures the LWO loader to load just one layer from the model.</p>\n<p>LWO files consist of layers and in some cases it could be useful to load only one of them.\nThis property can be either a string - which specifies the name of the layer - or an integer - the index\nof the layer. If the property is not set then the whole LWO model is loaded. Loading fails\nif the requested layer is not vailable. The layer index is zero-based and the layer name may not be empty</p>\n<p sourcefile=\"api/SharpAssimp.Configs.LWOImportOneLayerConfig.yml\" sourcestartlinenumber=\"8\">The default value is false (all layers are loaded).</p>\n"
     },
     {
       "type": "ManagedReference",
@@ -974,7 +974,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig",
-      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.yml\" sourcestartlinenumber=\"1\">The Ogre importer will detect the texture usage from the filename. Normally a texture is loaded as a color map, if no target is specified\nin the material file. If this is enabled, then Assimp will try to detect the type from the texture filename postfix:</p>\n<ul><li>Normal Maps: _n, _nrm, _nrml, _normal, _normals, _normalmap</li><li>Specular Maps: _s, _spec, _specular, _specularmap</li><li>Light Maps: _l, _light, _lightmap, _occ, _occlusion</li><li>Displacement Maps: _dis, _displacement</li></ul>\nThe matching is case insensitive. Postfix is taken between the last \"_\" and last \".\". The default behavior is to detect type from lower cased\ntexture unit name by matching against: normalmap, specularmap, lightmap, and displacementmap. For both cases if no match is found then,\n<xref href=\"SharpAssimp.TextureType.Diffuse\" data-throw-if-not-resolved=\"false\"></xref> is used. The default value is false.\n"
+      "Summary": "<p sourcefile=\"api/SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.yml\" sourcestartlinenumber=\"1\">The Ogre importer will detect the texture usage from the filename. Normally a texture is loaded as a color map, if no target is specified\nin the material file. If this is enabled, then Assimp will try to detect the type from the texture filename postfix:</p>\n<ul><li>Normal Maps: _n, _nrm, _nrml, _normal, _normals, _normalmap</li><li>Specular Maps: _s, _spec, _specular, _specularmap</li><li>Light Maps: _l, _light, _lightmap, _occ, _occlusion</li><li>Displacement Maps: _dis, _displacement</li></ul>\n<p sourcefile=\"api/SharpAssimp.Configs.OgreTextureTypeFromFilenameConfig.yml\" sourcestartlinenumber=\"6\">The matching is case insensitive. Postfix is taken between the last &quot;_&quot; and last &quot;.&quot;. The default behavior is to detect type from lower cased\ntexture unit name by matching against: normalmap, specularmap, lightmap, and displacementmap. For both cases if no match is found then,\n<xref href=\"SharpAssimp.TextureType.Diffuse\" data-throw-if-not-resolved=\"false\"></xref> is used. The default value is false.</p>\n"
     },
     {
       "type": "ManagedReference",
